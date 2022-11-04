@@ -1,0 +1,21 @@
+Algoritmo "repita_ate"
+
+var
+
+c, f: real
+
+x: caractere
+
+inicio
+
+
+repita
+    escreva("Digite a temperatura em Celcius: ")
+    leia(c)                                              //le a temperatura em celcius
+    f <- (c * 9 / 5) + 32                               // faz a conversao para faren
+    escreval("Equivalente em Fahrenheit: ", f:4:1)     // imprime a temperatura em firen
+    escreva("Deseja repetir (s/n)? ")                  // le a variavel x , para saber se deve repitir o looping ou n
+    leia(x)
+ate x <> "s"                                          // compara se x é igual a S ou não 
+
+fimalgoritmo

@@ -1,0 +1,240 @@
+algoritmo "Valicacao_de_notas"
+
+var
+
+x,y,m:real
+
+inicio
+
+// x = primeira nota
+// y = segunda nota
+// m = media = (x + y)/ 2
+
+x <- 2
+y <- 3
+
+
+enquanto ((x > 0) e (x < 10.0)) e ((y > 0) e (y < 10.0)) faca
+Escreva("DIGITE A PRIMEIRA NOTA: ")
+leia(x)
+
+se (x > 0) e (x < 10.0) entao
+    leia(y)
+senao
+   enquanto (x < 0) ou (x > 10.0) faca
+         escreval("NUMERO INVALIDO, REPITA: ")
+         leia(x)
+   fimenquanto
+fimse
+   leia(y)
+   
+se (y > 0) e (y < 10.0) entao
+    m <- (x + y)/2
+    escreval("MEDIA IGUAL A: ",m)
+senao
+   enquanto(y < 0) ou (y > 0) faca
+   escreval("NUMERO INVALIDO, REPITA: ")
+   leia(y)
+   fimenquanto
+fimse
+   m <- (x + y)/2
+   escreval("MEDIA IGUAL A: ", m)
+fimenquanto
+
+
+fimalgoritmo
+
+
+
+
+
+
+logica totalmente errada e fudida
+// ERRO IDENTIFICADO, A LOGICA ESTA CERTO
+POREM HAVIA UM PEQUENO PROBLEMA
+EU DEIXA O ULTIMO PACO FORA DO DA ESTRUTURA CONDICIONAL
+OU SEJA, UM COMANDO ERA REPITIDO APOS PASSAR POR TODA UMA VERIFICACAO, FOSSE ELA VALIDA OU NAO
+///////////////
+
+Continua dando erro, n sei o motivo agora.
+===============================================================================================
+
+
+algoritmo "Valicacao_de_notas"
+
+var
+
+x,y,m:real
+
+inicio
+
+// x = primeira nota
+// y = segunda nota
+// m = media = (x + y)/ 2
+
+x <- 2
+y <- 3
+
+
+enquanto ((x > 0) e (x < 10.0)) ou ((y > 0) e (y < 10.0)) faca                               
+Escreva("DIGITE A PRIMEIRA NOTA: ")                                        
+leia(x)                                                                   
+
+se (x >= 0) e (x =< 10.0) entao                                                                               
+    leia(y)                                                                          
+senao
+   enquanto (x < 0) ou (x > 10.0) faca         
+         escreval("NUMERO INVALIDO, REPITA: ")                
+         leia(x)
+   fimenquanto
+   leia(y)
+fimse
+
+
+se (y >= 0) e (y =< 10.0) entao                          
+    m <- (x + y)/2
+    escreval("MEDIA IGUAL A: ",m)
+senao
+   enquanto(y < 0) ou (y > 0) faca
+   escreval("NUMERO INVALIDO, REPITA: ")
+   leia(y)
+   fimenquanto
+      m <- (x + y)/2
+   escreval("MEDIA IGUAL A: ", m)
+fimse
+fimenquanto
+
+
+fimalgoritmo
+
+--------------------------------------/// ATUALIZACAO DE ERRO: PARECE ESTA RELACIONADO AO FATO DE TENTAR FAZER EXPRESSÃO COM OS OPERADORES LOGICOS. --------------------------------
+                                              ((algo =< x) e (algo =< x)) parece estar errado
+                                                 (algo <= x) e (algo =< x) seria o certo?
+                                        
+                                         ATUALIZACAO: LOOPINGS NO VISUALG, NÃO ACEITAM OPERADOS "=<"  '>="  nem mesmo as expressoes "se" estão aceitando esses operados
+                                         caso aparessam mais de um vez
+
+                                         ATUALIZACAO: No fim, acabei percebendo que eu posso simplesmente analisar a media, para fica um looping infinito
+                                         porém foi util para o aprendizado acima, sobre não repetir tais operadores.  porém aceita expressoes como aprendido.
+
+                                         Outro aprendizado tabem foi testar cada parte do algoritmo com o debug, antes de usar. 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+algoritmo "Valicacao_de_notas"
+
+var
+
+x,y,m:real
+
+inicio
+
+// x = primeira nota
+// y = segunda nota
+// m = media = (x + y)/ 2
+
+m <- 1
+
+
+enquanto m > 0 faca
+                               
+Escreva("DIGITE A PRIMEIRA NOTA: ")                                        
+leia(x)                                                                   
+
+se (x > 0) e (x < 10.0) entao                                                                                                                            
+    leia(y)                                                                          
+senao
+   enquanto (x < 0) ou (x > 10.0) faca         
+         escreval("NUMERO INVALIDO, REPITA: ")                
+         leia(x)
+   fimenquanto
+   leia(y)
+fimse
+
+
+se (y > 0) e (y < 10.0) entao                          
+    m <- (x + y)/2
+    escreval("MEDIA IGUAL A: ",m)
+senao
+   enquanto(y < 0) ou (y > 0) faca
+   escreval("NUMERO INVALIDO, REPITA: ")
+   leia(y)
+   fimenquanto
+      m <- (x + y)/2
+   escreval("MEDIA IGUAL A: ", m)
+fimse
+
+fimenquanto
+
+
+fimalgoritmo
+
+
+/// no fim, se for para para pensar não necessita de ifs e elses, pois nesse caso ele so cai no looping se infligir as regras. o professor tinha razao 
+
+============================================================================================================================================
+
+
+--// Versão funcional que se encerra com 0.0 //--
+
+algoritmo "Validacao_de_notas"
+
+var
+
+x,y,m: real
+
+inicio
+
+m <- 1
+
+enquanto m >= 1 faca
+
+escreva("DIGITE A PRIMEIRA NOTA: ") // bloco de verificacao do X
+leia(x)
+
+se ((x > 0) e (x < 10)) ou ((x = 10) ou (x = 0)) entao
+escreval("Digite a segunda nota: ")   // Caso seja verdadeiro
+leia(y)
+
+   senao
+     enquanto (x < 0)ou(x > 10) faca     // Caso seja falso
+         escreval("Numero invalido, digite novamente: ")
+         leia(x)
+     
+     fimenquanto
+
+     escreval("DIGITE A SEGUNDA NOTA: ")
+     leia(y)
+
+fimse
+
+se ((y > 0) e (y < 10)) ou (( y = 10) ou (y = 0)) entao            //Bloco verificacao de Y
+    m <- (x + y) / 2
+    escreval("MEDIA: ", m)    //caso verdade
+    
+      senao
+         enquanto (y < 0) ou (y > 10) faca
+         escreval("Numero invalido, digite novamente: ") //caso falso
+         leia(y)
+         
+         fimenquanto
+               m <- (x + y) / 2
+               escreval("MEDIA: ", m)
+               escreval
+
+fimse
+
+fimenquanto
+
+
+
+
+
+fimalgoritmo
+
+
+
+
+
+

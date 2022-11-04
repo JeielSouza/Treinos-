@@ -1,0 +1,97 @@
+>> MINHA TENTATIVA FALHA.
+
+
+algoritmo "Maior_Numero"
+
+var
+
+n,i,posit: inteiro
+posiv:real
+vet: vetor [0..99] de real
+
+
+
+inicio
+
+escreva("Digite quantos numeros vai digitar: ")
+leia(n)
+
+para i de 0 ate n-1 faca
+     escreva("Digite seu numero: ")
+     leia(vet[i])
+fimpara
+
+
+     se vet[0] > vet[1] entao
+     posiv <- vet[0]
+     posit <- 0
+        senao
+          posiv <- vet[1]
+          posit <- 1
+     fimse
+     
+     
+para i de 0 ate n-1 faca
+     se posiv < vet[i] entao
+        posiv <- vet[i]
+     fimse
+     
+     se (posiv > vet[i]) e (posit <> 0) entao
+        posit <- posit + 1
+     fimse
+fimpara
+     
+
+
+
+escreval(posiv, " ", posit)
+
+==============================// CORRETA Q EU FIZ //========================
+
+algoritmo "Maior_Numero"
+
+var
+
+n,i,posit: inteiro
+posiv:real
+vet: vetor [0..99] de real
+
+
+
+inicio
+
+escreva("Digite quantos numeros vai digitar: ") // :e a quantidade de vezes
+leia(n)
+
+para i de 0 ate n-1 faca
+     escreva("Digite seu numero: ")      // Ler os numeros do vetor
+     leia(vet[i])
+fimpara
+
+
+     se vet[0] > vet[1] entao          // Armazena o maior entre a comparacao do indice 0 com o 1 para as proximas tentativas
+     posiv <- vet[0]
+        senao
+          posiv <- vet[1]
+     fimse
+     
+     
+para i de 0 ate n-1 faca
+     se posiv < vet[i] entao          // Verifica se posiv, e maior que os demais numeros do array, caso nao seja, o posiv e substituido pelo maior, e posit recebe a posicao que esse numero esta
+        posiv <- vet[i]
+        posit <- i
+     fimse
+     
+
+fimpara
+     
+
+
+
+escreval(posiv, " ", posit)
+
+
+
+fimalgoritmo
+
+

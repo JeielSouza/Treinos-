@@ -1,0 +1,31 @@
+algoritmo "Teste_trada_dados"
+
+var
+
+nome: caractere
+salario1,salario2:real
+idade: inteiro
+
+inicio
+
+escreval("===================")
+escreva("DIGITE SEU NOME: ")
+leia(nome)
+escreval
+escreva("DIGITE SUA IDADE: ")
+leia(idade)
+escreval
+escreva("DIGITE SEU ULTIMO SALARIO: ")
+leia(salario1)
+escreval
+escreva("DIGITE SEU SALARIO PRETENDIDO: ")
+leia(salario2)
+escreval
+escreval("NOME: ",nome)
+escreval("IDADE: ",idade)
+escreval("ULTIMO SALARIO INFORMADO: ",salario1:8:2)
+escreval("SALARIO PRETENDIDO INFORMADO: ",salario2:8:2)
+escreval
+escreval("=======================================")
+
+fimalgoritmo

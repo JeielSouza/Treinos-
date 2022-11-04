@@ -1,0 +1,35 @@
+
+algoritmo "Array_MESA_1"
+
+var
+
+a,b,d: inteiro
+
+v: vetor [0..6] de inteiro
+w: vetor [0..6] de inteiro
+
+inicio
+
+a <- 2
+b <- 5
+
+para d de 1 ate b-1 faca
+v[d] <- a
+a <- a * 2
+w[d-1] <- a
+fimpara
+
+para d de 0 ate b faca
+
+escreval(w[d])
+escreval(v[d])
+
+
+fimpara
+
+
+
+fimalgoritmo
+
+
+

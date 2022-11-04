@@ -1,0 +1,35 @@
+ALGORITMO "retangulo"
+
+var
+
+b,h,p,a,d:real
+
+inicio
+
+escreval("==*PERIMENTRO RETANGLE*====")
+escreval
+escreva("DIGITE A BASE: ")
+leia(b)
+escreval
+escreva("DIGITE A ALTURA: ")
+leia(h)
+escreval
+
+
+p <- 2*(h+b)
+a <- h*b
+d <- raizq(exp(b,2) + exp(h,2))
+
+
+escreval("=======RESULTADOS=======")
+escreval
+escreval("VALOR DA AREA: ", a:8:4)
+escreval
+escreval("VALOR DO PERIMETRO: ", p:8:4)
+escreval
+escreval("VALOR DA DIAGONAL: ", d:8:4)
+escreval
+escreval("=========================")
+
+fimalgoritmo
+

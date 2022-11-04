@@ -1,0 +1,66 @@
+algoritmo "Soma_pares"
+
+var
+
+x,ac,s: inteiro
+
+inicio
+
+ac <- 0
+
+escreva("Digite um numero inteiro: ")
+leia(x)
+
+enquanto x <> 0 faca
+
+se x%2 <> 0 entao
+  x <- x + 1
+fimse
+
+para s de 1 ate 5 faca
+     ac <- ac + x
+     x <- x + 2
+fimpara
+
+escreval ("Soma igual a: ",ac)
+escreva("Digite um numero inteiro: ")
+leia(x)
+
+ac <- 0
+
+fimenquanto
+
+fimalgoritmo
+
+------------------------------ ou pode ser feito usando matematica bruta
+
+algoritmo "Soma_pares"
+
+var
+
+x,ac,s: inteiro
+
+inicio
+
+ac <- 0
+
+escreva("Digite um numero inteiro: ")
+leia(x)
+
+enquanto x <> 0 faca
+
+se x%2 <> 0 entao
+  x <- x + 1
+fimse
+
+ac <- 5 * x + 20
+
+escreval ("Soma igual a: ",ac)
+escreva("Digite um numero inteiro: ")
+leia(x)
+
+
+
+fimenquanto
+
+fimalgoritmo

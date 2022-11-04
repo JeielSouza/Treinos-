@@ -1,0 +1,30 @@
+algoritmo "Fatorial"
+
+var
+
+n1: inteiro
+resu: inteiro
+
+funcao Fat(a: inteiro):inteiro
+var
+i,r:inteiro
+inicio
+
+r <- 1
+para i de 1 ate a faca
+r <- r * i
+fimpara
+
+retorne r
+
+fimfuncao
+
+inicio
+
+escreval("Digite o numero fatorial: ")
+leia(n1)
+resu <- Fat(n1)
+escreval(resu)
+
+
+fimalgoritmo

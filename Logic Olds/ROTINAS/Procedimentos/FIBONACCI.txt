@@ -1,0 +1,30 @@
+algoritmo "Fibonacci"
+
+var
+
+v1,v2,i: inteiro
+
+procedimento Fibo(var a, b: inteiro)
+var c: inteiro
+inicio
+
+c <- a + b
+a <- b
+b <- c
+
+escreva(b)
+
+fimprocedimento
+
+inicio
+
+v1 <- 1
+v2 <- 1
+
+escreva(v1)
+
+para i de 1 ate 10 faca
+     Fibo(v1, v2)
+fimpara
+
+fimalgoritmo

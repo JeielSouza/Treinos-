@@ -1,0 +1,31 @@
+algoritmo "troco"
+
+var
+
+p1,dr,troc:real
+q:inteiro
+
+inicio
+
+Escreval("===SOMA====")
+Escreval
+Escreva("VALOR UNITARIO DO PRODUTO: ")
+leia(p1)
+Escreval
+Escreva("QUANTIDADE COMPRADA: ")
+leia(q)
+Escreval
+Escreva("DINHEIRO RECEBIDO: ")
+leia(dr)
+
+troc <- dr-(p1*q)
+
+Escreval
+Escreval("== T R O C O ===I")
+Escreval("                I")
+Escreval("R$ ",troc:8:2, "     I")
+Escreval("                I")
+Escreval("=============== I")
+
+
+fimalgoritmo

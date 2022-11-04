@@ -1,0 +1,37 @@
+algoritmo "teste_FOR"      // crecente
+
+
+
+var
+
+i:inteiro
+
+inicio
+
+para i de 10 ate 20 faca
+     escreval("bom, dia")
+
+fimpara
+
+fimalgoritmo
+
+
+----------------------------
+
+algoritmo "teste_FOR"      // contagem regressiva
+
+
+
+var
+
+i:inteiro
+
+inicio
+
+para i de 5 ate 1 passo -1 faca
+
+     escreval("Valor de i: ", i)
+
+fimpara
+
+fimalgoritmo

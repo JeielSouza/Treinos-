@@ -1,0 +1,33 @@
+algoritmo "baskara"
+
+var
+
+a,b,c,x1,x2,delta: real
+
+inicio
+
+escreval("=== B A S K A R A ===")
+escreval
+escreva("DIGITE O COEFICIENTE A: ")
+leia (a)
+escreval
+escreva("DIGITE O COEFICIENTE B: ")
+leia(b)
+escreval
+escreva("DIGITE O COEFICIENTE C: ")
+leia(c)
+
+escreval
+
+delta <- b^2 - 4 * a * c
+
+se (a = 0) ou (delta < 0) entao
+   escreval("ESSA EQUACAO NÃO POSSUI RAIZ")
+senao
+  x1 <- (-b + raizq(delta)) / (2 * a)
+  x2 <- (-b - raizq(delta)) / (2 * a)
+  escreval("X1= ", x1)
+  escreval("X2= ", x2)
+fimse
+
+fimalgoritmo

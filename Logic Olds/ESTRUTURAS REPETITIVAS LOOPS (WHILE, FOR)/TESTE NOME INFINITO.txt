@@ -1,0 +1,20 @@
+algoritmo "pohanenhuma"
+
+var
+
+x,y: real
+
+
+inicio
+
+x <- 10
+y <- 100
+
+enquanto x <> y faca
+      escreval("GAY DETECTED")
+      x<- raizQ(y)
+fimenquanto
+
+
+
+fimalgoritmo

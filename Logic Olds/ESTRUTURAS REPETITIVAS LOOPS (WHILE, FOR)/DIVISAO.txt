@@ -1,0 +1,37 @@
+algoritmo "Divisao"
+
+var
+
+x1,x2,r: real
+s,n: inteiro
+
+inicio
+
+Escreva("Quantos casos serão?: ")
+leia(n)
+Escreval
+
+para s de 1 ate n faca
+
+Escreva("DIGITE O NUMERADOR: ")
+leia(x1)
+escreva("DIGITE O DENOMINADOR: ")
+leia(x2)
+
+se x2 = 0 entao
+   escreval
+   escreval("DIVISÃO IMPOSSIVEL")
+   escreval
+   
+       senao
+         r <- x1 / x2
+         escreval
+         escreval("RESULTADO: ", r)
+         escreval
+
+fimse
+
+
+fimpara
+
+fimalgoritmo

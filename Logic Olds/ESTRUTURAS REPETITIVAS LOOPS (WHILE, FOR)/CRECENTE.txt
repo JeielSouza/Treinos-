@@ -1,0 +1,29 @@
+algoritmo "CRECENTE"
+
+var
+
+x,y: inteiro
+
+inicio
+
+escreval ("DIGITE DOIS NUMEROS INTEIROS: ")
+leia(x)
+leia(y)
+
+enquanto x <> y faca
+     se x < y entao
+        escreval("CRECENTE")
+        senao
+        se x > y entao
+           escreval("DECRECENTE")
+        fimse
+     fimse
+     
+escreval("DIGITE MAIS DOIS NUMEROS INTEIROS: ")
+leia(x)
+leia(y)
+
+     
+fimenquanto
+
+fimalgoritmo

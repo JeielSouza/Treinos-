@@ -1,0 +1,125 @@
+.
+--// jeito da aula //---
+
+
+algoritmo "Array"
+
+var
+
+n, i: inteiro
+vet: vetor [0..9] de real
+
+
+inicio
+
+Escreval("Quantos numeros deseja digitar? ")
+leia(n)
+
+
+para i de 0 ate n-1  faca // -1 e sempre utilizado, logo qualquer numero comeca do 0 e tera 1 amais, caso nao tenha o -1
+escreval("Digite um numero")
+leia(vet[i])                             // Podemos armazenas um leia direto na posicao de um vetor. \
+fimpara
+
+escreval("ESSE FORAM OS NUMEROS: ")
+
+para i de 0 ate n-1 faca
+escreval(vet[i])
+fimpara
+
+// so deu para amazenar com ponto decimal nesse caso
+// sendo o leia mandando direto para o vetor
+// e nao uma variavel que foi mandada para ele.
+
+
+
+
+fimalgoritmo
+
+
+
+
+
+
+
+
+
+-=========================================================
+
+algoritmo "Array"
+
+
+
+var
+
+A: vetor [0..10] de real
+i: inteiro
+n,z,p: inteiro
+
+inicio
+
+Escreval("Quantos numeros deseja digitar? ")
+leia(n)
+
+
+para i de 0 ate n-1 faca
+escreval("Digite um numero")
+leia(z)
+
+A[i] <- z
+
+fimpara
+
+escreval("ESSE FORAM OS NUMEROS: ")
+
+para p de 0 ate n-1 faca
+escreval()
+escreval(A[p])
+
+fimpara
+
+
+
+
+
+fimalgoritmo
+
+-*--------------------------------// ANTA BURRA, 10 ESPACACOS SERIA 0 A 9 //-----------
+
+
+algoritmo "Array"
+
+var
+
+A: vetor [0..9] de real
+i: inteiro
+n,z,p: inteiro
+
+inicio
+
+Escreval("Quantos numeros deseja digitar? ")
+leia(n)
+
+
+para i de 0 ate n faca
+escreval("Digite um numero")
+leia(z)
+
+A[i] <- z
+
+fimpara
+
+escreval("ESSE FORAM OS NUMEROS: ")
+
+para p de 0 ate n faca
+escreval()
+escreval(A[p])
+
+fimpara
+
+
+
+
+
+fimalgoritmo
+

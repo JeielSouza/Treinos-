@@ -1,0 +1,26 @@
+algoritmo "Impares_consecutivos"
+
+var
+
+x,s:inteiro
+
+inicio
+
+escreva ("Digite um numero inteiro: ")
+leia(x)
+
+se x%2 = 0 entao
+  x <- x + 1
+fimse
+
+para s de 1 ate x passo 2 faca
+     escreval(s)
+
+fimpara
+
+
+
+
+
+
+fimalgoritmo

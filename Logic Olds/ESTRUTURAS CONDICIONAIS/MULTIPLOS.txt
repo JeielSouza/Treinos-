@@ -1,0 +1,24 @@
+algoritmo "multiplos"
+
+var
+
+n1,n2,verif: inteiro
+
+inicio
+
+escreva("Digite o primeiro numero:")
+leia(n1)
+escreva("Digite o segundo numero: ")
+leia(n2)
+
+verif <- n1%n2
+
+se verif = 0 entao
+escreval("Os numeros são multiplos")
+senao
+escreval("Os numeros não são multiplos")
+fimse
+
+
+
+fimalgoritmo

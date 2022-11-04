@@ -1,0 +1,17 @@
+algoritmo "teste_vetor"
+
+var
+
+b: vetor [0..4] de inteiro
+i: inteiro
+
+inicio
+
+para i de 0 ate 4 faca
+  b[i] <- i + 10
+fimpara
+
+Escreval(b[0],b[1],b[2],b[3],b[4])
+
+fimalgoritmo
+

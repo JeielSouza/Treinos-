@@ -1,0 +1,23 @@
+
+no visualg: 
+
+if - se
+else - senao 
+
+
+or - ou
+and - e
+not - não
+
+< - menor
+> - maior
+>= - maior ou igual        //não aceitos mais de uma vez
+<= - menor ou igual       sintese certa 
+<> - diferente 
+= - igual
+
+while - enquanto
+for - para 
+
+----------------------------
+

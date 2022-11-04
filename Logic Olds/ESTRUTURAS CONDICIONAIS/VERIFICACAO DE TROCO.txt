@@ -1,0 +1,80 @@
+MEU JEITO : 
+
+algoritmo "verificacao_de_valor"
+
+var
+
+vu, vr,troc, valuf, prect: real
+qtd: inteiro
+
+
+
+// READ ME
+// vu = valor da unidade
+// vr = valor recebido
+// qtd = quantidade do produto
+// troc = troco
+// valuf = valor faltante em caso de dinheiro insuficiente
+// prect = preco total
+
+// Se o valor pago pelo cliente for menor que o valor total
+// então exiba o valor faltante, = (valuf <- prect - vr)  se nao se o valor for
+// igual ou maior, entao exiba o troco = (troc <- vr - prect)
+
+
+inicio
+
+escreva("DIGITE O VALOR UNITARIO : R$ ")
+leia(vu)
+escreval
+escreva("DIGITE A QUANTIDADE : ")
+leia(qtd)
+escreval
+escreva("DIGITE QUANTO O CLIENTE PAGOU: R$ ")
+leia(vr)
+escreval
+
+prect <- vu * qtd
+
+      se vr < prect entao
+          valuf <- prect - vr
+          escreval("VALOR INCOMPLETO, AINDA FALTA: R$", valuf:8:2)
+      senao
+           se vr >= prect entao
+           troc <- vr - prect
+           escreval("VALOR DO TROCO: R$ ", troc:8:2)
+fimse
+fimse
+
+
+fimalgoritmo
+
+
+
+===== JEITO DO CURSO ======================
+
+algoritmo "troco"
+
+var
+
+preco, dinheiro, troco, resto: real
+quantidade: inteiro
+
+inicio
+
+escreval("preco unitario do produto: ")
+leia(preco)
+escreva("quantidade comprada: ")
+leia(quantidade)
+escreva("dinheiro recebido: ")
+leia(dinheiro )
+
+se dinheiro  >= (preco * quantidade) entao
+troco <- dinheiro - preco * quantidade
+escreval("TROCO: R$",troco:4:2)
+senao
+resto <- preco * quantidade - dinheiro
+escreval("DINHEIRO INSUFICIENTE, FALTA: R$",resto:4:2)
+fimse
+
+fimalgoritmo 

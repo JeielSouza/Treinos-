@@ -1,0 +1,55 @@
+Algoritmo "soma"
+
+var
+
+x,y,resu: real
+
+inicio
+
+escreval("===SOMA====")
+escreval
+escreva("Digite o valor de X: ")
+leia(x)
+escreval
+escreva("Digite o valor de Y: ")
+leia(y)
+escreval
+
+resu <- x + y
+
+escreval("O RESUlTADO É: ",resu:8:2)
+
+fimalgoritmo
+
+////////////////////
+
+
+Algoritmo "soma"
+
+var
+
+x,y,resu: inteiro
+
+inicio
+
+escreval("===SOMA====")
+escreval
+escreva("Digite o valor de X: ")
+leia(x)
+escreval
+escreva("Digite o valor de Y: ")
+leia(y)
+escreval
+
+resu <- x + y
+
+escreval("O RESUlTADO É: ",resu)
+
+fimalgoritmo
+
+
+
+
+
+
+

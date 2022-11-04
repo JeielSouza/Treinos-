@@ -1,0 +1,51 @@
+algoritmo "fatorzacao"
+
+var
+
+fat,i,n: inteiro
+
+inicio
+
+escreva("Digite o numero Fatorial: ")
+leia(n)
+
+fat <- 1
+
+para i de 1 ate n faca
+
+fat <- fat * i
+
+fimpara
+
+escreval(fat)
+
+fimalgoritmo
+
+-----------------------
+RESOLUCAO Q DEMORO 3 HORAS DE RACIOCINIO
+USANDOA S FORMULAS
+-------
+
+algoritmo "fatorial"
+
+var
+
+n,i,y:inteiro
+
+inicio
+
+escreva("DIGITE O NUMERO FATORIAL: ")
+leia(n)
+
+
+y <- n * (n - 1)
+
+para i de 2 ate n-1 faca
+
+y <- y * (n - i)
+
+fimpara
+
+escreval (y)
+
+fimalgoritmo

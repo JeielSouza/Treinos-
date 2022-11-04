@@ -1,0 +1,33 @@
+algoritmo "consumo_por_litro"
+
+var
+
+DP,CG,CML:real
+
+inicio
+
+escreval("==CONSUMO POR LITRO===")
+escreval
+escreva("DISTANCIA PERCORRIDA PELO CARRO EM KM: ")
+leia(DP)
+escreval
+escreva("COMBUSTIVEL GASTO EM LITROS: ")
+leia(CG)
+escreval
+
+CML <- DP / CG
+
+escreval("=========================")
+escreval
+escreval("O CARRO PERCORREU: ",DP," KM")
+escreval
+escreval("GASTOU: ",CG,"L")
+escreval
+escreval("LOGO, O CARRO CONSOME: ",CML:8:3," L POR KILOMETRO.")
+escreval
+escreval("============================")
+
+fimalgoritmo
+
+
+

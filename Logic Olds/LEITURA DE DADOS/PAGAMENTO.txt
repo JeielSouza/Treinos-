@@ -1,0 +1,34 @@
+algoritmo "salary"
+
+var
+
+nome:caractere
+vh,ht,saly:real
+
+inicio
+
+escreval("===SALARY CALCULATOR===")
+escreval
+escreva("NOME DO(A) FUNCIONARIO(A): ")
+leia(nome)
+escreval
+escreva("VALOR DA HORA TRABALHADA EM R$: ")
+leia(vh)
+escreval
+escreva("HORAS TRABALHADAS PELO(A) FUNCIONARIO(A): ")
+leia(ht)
+
+saly <- vh*ht
+
+escreval
+escreval("=== TELA PAGAMENDO ===")
+escreval
+escreval("FUNCIONARIO: ", nome)
+escreval
+escreval("VALOR A SER PAGO: R$ ", saly:8:2)
+escreval
+escreval("=====================")
+
+fimalgoritmo
+
+

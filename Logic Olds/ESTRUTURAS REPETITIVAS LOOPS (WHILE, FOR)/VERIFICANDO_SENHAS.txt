@@ -1,0 +1,184 @@
+
+
+cadastre sua senha numerica: 2330
+
+digite sua senha: 600
+ACESSO NEGADO tente novamente: 355
+ACESSO NEGADO tente novamente: 2330
+Acesso Liberado. 
+
+
+-------// TENTATIVA 1 (FUNCIOUNOU) //---------
+
+// o objetivo é ser bem direto 
+
+Algoritmo "teste_senha"
+
+var
+
+s, t: inteiro
+
+// S = senha
+// T = Tentativa
+
+
+
+
+inicio
+
+t <- 0
+
+Escreva("Digite a senha que deseja criar: ")
+leia(s)
+
+escreva("Digite sua senha para entrar: ")
+leia(t)
+
+enquanto s <> t faca
+
+    escreva("SENHA INCORRETA, TENTE NOVAMENTE: ")
+    leia(t)
+
+fimenquanto
+
+    escreva("ACESSO LIBERADO")
+
+fimalgoritmo
+
+------------// TENATIVA 2 (funciona) //-------------------
+
+// nesse caso o objetivo é encapsular tudo numa estrutura condicional 
+
+Algoritmo "teste_senha"
+
+var
+
+s, t: inteiro
+
+// S = senha
+// T = Tentativa
+
+
+
+
+inicio
+
+t <- 0
+
+Escreva("Digite a senha que deseja criar: ")
+leia(s)
+
+escreva("Digite sua senha para entrar: ")
+leia(t)
+
+se s <> t entao 
+
+       enquanto s <> t faca
+
+          escreva("SENHA INCORRETA, TENTE NOVAMENTE: ")
+          leia(t)
+
+       fimenquanto
+
+          escreva("ACESSO LIBERADO")
+
+senao  
+   se s = t entao
+     escreva("ACESSO LIBERADO")
+   fimse
+
+fimse 
+
+fimalgoritmo
+
+
+-----------// TENTATIVA 3 (RESULTADO INDESEJADO)//-------------
+
+//usando o repita-ate sendo direto ao ponto 
+
+// não funciona, pois mesmo acertando na primeira tentativa ele vai
+iniciar o looping e dizer que esta errado 
+
+
+Algoritmo "teste_senha"
+
+var
+
+s, t: inteiro
+
+// S = senha
+// T = Tentativa
+
+
+
+
+inicio
+
+t <- 0
+
+Escreva("Digite a senha que deseja criar: ")
+leia(s)
+
+escreva("Digite sua senha para entrar: ")
+leia(t)
+
+
+repita 
+
+     escreva("SENHA INCORRETA, TENTE NOVAMENTE: ")
+     leia(t)
+
+ate s = t 
+
+          escreva("ACESSO LIBERADO")
+
+fimalgoritmo
+
+---------// TENTATIVA 4 (funciona)//------------------
+
+// Encapsular o repita-ate em uma estrutura condicional 
+
+Algoritmo "teste_senha"
+
+var
+
+s, t: inteiro
+
+// S = senha
+// T = Tentativa
+
+
+
+
+inicio
+
+t <- 0
+
+Escreva("Digite a senha que deseja criar: ")
+leia(s)
+
+escreva("Digite sua senha para entrar: ")
+leia(t)
+
+se s <> t entao
+      repita
+
+           escreva("SENHA INCORRETA, TENTE NOVAMENTE: ")
+           leia(t)
+
+      ate s = t
+
+                escreva("ACESSO LIBERADO")
+                
+senao
+  se s = t entao
+      escreva("ACESSO LIBERADO")
+
+  fimse
+fimse
+
+
+
+
+fimalgoritmo
+----------------------------------

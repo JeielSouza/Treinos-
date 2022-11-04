@@ -1,0 +1,52 @@
+algoritmo "teste_condicional"
+
+var
+
+x: inteiro
+
+inicio
+
+x <- 5
+
+escreval("Bom dia")
+
+se x < 0 entao
+   escreval("Boa tarde")    //condicao falsa 
+fimse
+
+escreval("Boa noite")
+
+fimalgoritmo
+
+
+// so vai imprimir: BOM DIA e BOA NOITE
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+algoritmo "teste_condicional"
+
+var
+
+x: inteiro
+
+inicio
+
+x <- 5
+
+escreval("Bom dia")
+
+se x > 0 entao
+   escreval("Boa tarde")    //condicao verdadeira
+fimse
+
+escreval("Boa noite")
+
+fimalgoritmo
+
+
+
+//vai imprimir: BOM DIA, BOA TARDE, BOA NOITE.
+
+

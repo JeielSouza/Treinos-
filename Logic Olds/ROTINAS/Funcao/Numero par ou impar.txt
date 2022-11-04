@@ -1,0 +1,42 @@
+algoritmo "Teste Funcao"
+
+var
+
+n1: inteiro
+Result: caractere
+
+funcao ParImp(a: inteiro):caractere   // funcao
+var
+
+r: caractere
+inicio
+
+se a%2 = 0 entao
+   r <- "Par"
+senao
+   r <- "Impar"
+fimse
+
+retorne r
+
+fimfuncao
+
+
+inicio   // progama
+
+escreval("Digite um numero: ")
+leia(n1)
+
+Result <- ParImp(n1)
+escreval
+escreval(Result)
+
+
+
+
+
+
+
+
+fimalgoritmo
+

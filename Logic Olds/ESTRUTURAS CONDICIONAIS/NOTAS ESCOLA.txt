@@ -1,0 +1,64 @@
+algoritmo "Notas_escola"
+
+var
+
+n1,n2,rf: real
+
+inicio
+
+escreval("==SISTEMA DE NOTAS==")
+escreval
+escreva("DIGITE A SOMA DAS NOTAS DO PRIMEIRO SEMESTRE: ")
+leia(n1)
+escreval
+escreval("DIGITE A SOMA DAS NOTAS DO SEGUNDO SEMESTRE: ")
+leia(n2)
+escreval
+
+rf <- n1 + n2
+
+  se rf >= 60.00 entao
+     escreval("NOTA FINAL: ",rf:5:1)
+     escreval("ALUNO APROVADO")
+   senao
+     se rf < 60.00 entao
+        escreval("NOTA FINAL: ",rf:5:1)
+        escreval("ALUNO REPROVADO")
+     fimse
+fimse
+
+fimalgoritmo
+
+
+/////////// ou ////////////
+
+
+algoritmo "Notas_escola"
+
+var
+
+n1,n2,rf: real
+
+inicio
+
+escreval("==SISTEMA DE NOTAS==")
+escreval
+escreva("DIGITE A SOMA DAS NOTAS DO PRIMEIRO SEMESTRE: ")
+leia(n1)
+escreval
+escreval("DIGITE A SOMA DAS NOTAS DO SEGUNDO SEMESTRE: ")
+leia(n2)
+escreval
+
+rf <- n1 + n2
+
+  se rf >= 60.00 entao
+     escreval("NOTA FINAL: ",rf:5:1)
+     escreval("ALUNO APROVADO")
+   senao
+        escreval("NOTA FINAL: ",rf:5:1)
+        escreval("ALUNO REPROVADO")
+fimse
+
+fimalgoritmo
+

@@ -1,0 +1,65 @@
+algoritmo "diabetes"
+
+
+var
+
+gd:inteiro
+class:caractere
+
+// READ ME
+//gd = glicose digitada
+//class = classificacao de nivel de glicose
+
+inicio
+
+escreva("DIGITE O VALOR DA GLICOSE: ")
+leia(gd)
+escreval
+
+se gd <= 100 entao
+  class <- "NORMAL"
+  escreval(class," ",gd)
+     senao
+        se (gd > 100)e(gd <= 140) entao
+        class <- "ELEVADO"
+        escreval(class," ",gd)
+    senao
+       se gd > 140 entao
+       class <- "DIABESTES"
+       escreval(class," ",gd)
+
+    fimse
+  fimse
+fimse
+
+
+
+fimalgoritmo
+
+
+========================== J E I T O DO C U R S O ===================
+
+algoritmo "diabetes"
+
+var
+
+glicose: real
+
+
+inicio
+
+escreva ("digite a medida da glicose: ")
+leia(glicose)
+
+
+se glicose <= 100.0 entao
+     escreval("Classificacao: NORMAL")
+senao
+     se glicose <= 140 entao
+      escreval("Classificacao: ELEVADA")
+senao
+      escreval("Classificacao: DIABETES")
+    fimse
+fimse
+
+fimalgoritmo

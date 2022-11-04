@@ -1,0 +1,26 @@
+algoritmo "teste_2FOR"
+
+
+
+var
+
+z,i,n,y:inteiro
+
+inicio
+
+y <- 0
+
+escreva("Quantos numeros vais digitar? ")
+leia(i)
+
+para z de 1 ate i faca
+
+     escreval("Digite um numero: ")
+     leia(n)
+     y <- n + y
+     
+fimpara
+
+escreval("RESULTADO: ", y)
+
+fimalgoritmo

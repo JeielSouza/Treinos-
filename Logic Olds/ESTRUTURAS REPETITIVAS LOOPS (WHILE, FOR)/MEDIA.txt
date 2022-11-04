@@ -1,0 +1,89 @@
+algoritmo "Medias"
+
+var
+
+x,z,y,media: real
+
+inicio
+
+
+escreval("Digite uma idade: ")
+leia(x)
+
+
+enquanto x >= 0 faca
+
+       y <- y + x
+       z <- z + 1
+       escreval("Digite uma idade: ")
+       leia(x)
+
+fimenquanto
+
+
+
+se y > 0 entao
+
+   media <- y / z
+   escreval("MEDIA: ", media:8:2)
+
+   senao
+
+   se x < 0 entao
+
+       escreval("VALOR IMPOSSIVEL DE CALCULAR")
+
+
+   fimse
+
+fimse
+
+
+
+
+fimalgoritmo
+--------------------
+JEITO
+DO CURSO
+-=-----------
+
+
+algoritmo "media"
+
+var
+
+idade,soma,cont: inteiro                     // ele atribui zero, porque muitas linguagens
+                                                ñao atribui zero automaticamente. 
+media: real
+
+
+inicio 
+
+soma <- 0
+cont <- 0
+
+escreval("digite as idades: ")
+leia(idade)
+
+enquanto idade >= 0 faca
+
+         soma <- soma + idade
+         cont <- cont + 1
+
+        
+         leia(idade)
+
+fimenquanto
+
+se cont = 0 entao
+
+   escreval("impossivel calcular")
+
+senao
+
+   media <- soma / cont
+   escreval("Media = ", media:8:2)
+
+fimse
+
+fimenquanto

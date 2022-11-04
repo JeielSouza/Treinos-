@@ -1,0 +1,33 @@
+algoritmo "Fibonaci_func"
+
+var
+
+n1,n2,i,resu: inteiro
+
+
+funcao Soma(var a, b: inteiro): inteiro
+var
+c:inteiro
+inicio
+c <- a + b
+a <- b
+b <- c
+retorne c
+fimfuncao
+
+
+
+inicio
+
+
+n1<- 1
+escreva(n1)
+n2 <- 1
+escreva(n2)
+
+para i de 3 ate 10 faca
+     resu <- Soma(n1,n2)
+     escreva(resu)
+fimpara
+
+fimalgoritmo

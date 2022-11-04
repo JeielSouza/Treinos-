@@ -1,0 +1,57 @@
+algoritmo "varias_areas"
+
+var
+
+bm,bn,b,h,aq,atr,atp: real
+
+inicio
+
+escreval("=============================")
+escreval("V A R I O S   C A L C U L O S")
+escreval("=============================")
+escreval
+escreval("AVISO: Se voce vai calcular a")
+escreval("area do quadrado, zere e Base menor")
+escreval("e a Maior e so preencha base.")
+escreval
+escreval("Se vais calcular a base do")
+escreval("Triangulo retangulo, zere")
+escreval("base menor e base maior.")
+escreval
+escreval("Se vai calcular a area do")
+escreval("do trapezio, zere base, e")
+escreval("Preencha Base menor e maior.")
+escreval
+escreval("=============================")
+escreval("         I N I C I O         ")
+escreval("=============================")
+escreval
+escreva("DIGITE A BASE MAIOR: ")
+leia(bm)
+escreval
+escreva("DIGITE A BASE MENOR: ")
+leia(bn)
+escreval
+escreva("DIGITE BASE: ")
+leia(b)
+escreval
+escreva("DIGITE A ALTURA: ")
+leia(h)
+escreval
+
+aq <- b*h
+atr <- b*h/2
+atp <- (bm+bn)*h/2
+
+
+escreval("===================")
+escreval("R E S U L T A D O S")
+escreval("===================")
+escreval
+escreval("AREA DO QUADRADO: ", aq)
+escreval
+escreval("AREA TRIANGULO RETANGULO: ",atr)
+escreval
+escreval("AREA DO TRAPEZIO: ",atp)
+escreval
+fimalgoritmo

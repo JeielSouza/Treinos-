@@ -1,0 +1,89 @@
+algoritmo "nao_sei"
+
+var
+x,y: inteiro
+inicio
+
+y <- 0
+
+escreva("Digite um numero inteiro diferente de 0: ")
+leia(x)
+
+enquanto x <> 0 faca
+
+ y <- y + x
+ leia(x)
+ 
+fimenquanto
+escreva("Soma dos numeros digitados igual a: ", y)
+
+fimalgoritmo
+
+-------------
+oque faz?
+
+
+- Modifica o propio valor
+- Acumula valor 
+
+
+--------------
+
+algoritmo "nao_sei"
+
+var
+x,y,s: inteiro
+inicio
+
+y <- 1
+x <- 0
+
+enquanto y <> 500 faca
+
+ y <- y + x
+ x <- 1
+ s <- s + y
+ escreval(y)
+ 
+fimenquanto
+escreva("Soma dos numeros digitados igual a: ", s)
+
+fimalgoritmo
+
+// a soma de todos os numeros ate chegar em um
+
+-------
+
+acumula todos os valor e soma eles entre ci no final. 
+
+---------------------------
+
+
+algoritmo "para_reteste"
+
+var
+
+x,y,z,h: inteiro
+
+inicio
+
+z <- 0
+h <- 0
+
+escreva("Digite quantos até quantos numeros queres somar: ")
+leia(x)
+
+para y de 1 ate x faca
+
+ escreva("digite um numero: ")
+ leia(z)
+ h <- h + z
+ 
+fimpara
+
+escreval("SOMA = ", h)
+
+fimalgoritmo
+
+
+simplesmente prediz, a quantidade de coisas que voce vai digitar.

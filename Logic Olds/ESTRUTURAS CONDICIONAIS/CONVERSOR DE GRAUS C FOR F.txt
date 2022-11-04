@@ -1,0 +1,71 @@
+Problema temperatura. pode ser feito de duas formas. 
+
+
+1- Com logica; 
+
+========== JEITO PASTELÃO ==================
+
+Algoritmo "Graus_converter"
+
+var
+
+C,F,graus:real
+escal: caractere
+
+inicio
+
+escreva("Digite qual escala de temperatura  vais converter (C/F):")
+leia(escal)
+
+escreva("Quantos graus esta fazendo: ")
+leia(graus)
+
+
+se escal = "F" entao
+C <- (graus - 32) * 5/9
+escreval(C:4:2," C")
+senao
+se escal = "C" entao
+F <- (graus * 9/5) + 32         // Ele compara carteres
+escreval(F:4:2," F")
+senao 
+escreval("A ESCALA DIGITADA NÃO FOI RECONHECIDA.")
+fimse
+fimse
+
+fimalgoritmo
+
+============== COM ESCOLHA ===============================
+
+Algoritmo "Graus_converter"
+
+var
+
+C,F,graus:real
+escal: caractere
+
+inicio
+
+escreva("Digite qual escala de temperatura  vais converter (C/F):")
+leia(escal)
+
+escreva("Quantos graus esta fazendo: ")
+leia(graus)
+
+
+escolha escal
+caso "F"
+C <- (graus - 32) * 5/9
+escreval(C:4:2," C")
+
+caso "c"
+F <- (graus * 9/5) + 32
+escreval(F:4:2," F")
+
+outrocaso
+escreval("A ESCALA DIGITADA NÃO FOI RECONHECIDA.")
+
+fimescolha
+fimalgoritmo
+
+ m

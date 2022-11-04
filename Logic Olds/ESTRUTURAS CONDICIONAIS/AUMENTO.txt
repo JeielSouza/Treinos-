@@ -1,0 +1,62 @@
+algoritmo "aumento"
+
+var
+
+percent:caractere
+sala,novs,aum:real
+
+inicio
+
+Escreva("DIGITE O SALARIO: ")
+leia(sala)
+
+se sala <= 1000 entao
+
+aum <- sala * 0.2
+novs <- sala + aum
+percent <- "20 %"
+
+escreval("Novo Salario: R$", novs:8:2)
+escreval("Aumento = R$", aum:8:2)
+escreval("Porcentagem de Aumento: ", percent)
+
+senao
+se sala <= 3000 entao
+
+aum <- sala * 0.15
+novs <- sala + aum
+percent <- "15 %"
+
+escreval("Novo Salario: R$", novs:8:2)
+escreval("Aumento = R$", aum:8:2)
+escreval("Porcentagem de Aumento: ", percent)
+
+
+senao
+se sala <= 8000 entao
+
+aum <- sala * 0.1
+novs <- sala + aum
+percent <- "10 %"
+
+escreval("Novo Salario: R$", novs:8:2)
+escreval("Aumento = R$", aum:8:2)
+escreval("Porcentagem de Aumento: ", percent)
+
+senao
+
+aum <- sala * 0.05
+novs <- sala + aum
+percent <- "5 %"
+
+
+escreval("Novo Salario: R$", novs:8:2)
+escreval("Aumento = R$", aum:8:2)
+escreval("Porcentagem de Aumento: ", percent)
+
+
+fimse
+fimse
+fimse
+
+fimalgoritmo

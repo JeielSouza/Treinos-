@@ -1,0 +1,97 @@
+algoritmo "sla"
+
+var
+
+x,y: inteiro
+
+inicio
+
+x <- 0
+y <- 4
+
+enquanto x < 3 faca
+y <- y + 2
+x <- x + 1
+escreval (x, " -", y)
+fimenquanto
+
+
+
+
+fimalgoritmo
+
+--------------- EXEMPLO INFINITO
+
+algoritmo "sla"
+
+var
+
+x,y: inteiro
+
+inicio
+
+x <- 1
+y <- 4
+
+enquanto x > 0 faca
+y <- y + 2
+x <- x + 1
+escreval (x, " -", y)
+fimenquanto
+
+
+
+
+fimalgoritmo
+
+---- uma hora cracha o progama
+
+=======================================================
+
+
+algoritmo "teste2"
+
+
+var
+
+x,y: inteiro
+
+inicio
+
+
+x<-5
+y<-0
+
+enquanto x>2 faca
+      escreval(x," ",y)
+      y <- y + x
+      x <- x - 1
+fimenquanto
+
+fimalgoritmo
+
+
+=======================================================
+
+algoritmo "teste2"
+
+
+var
+
+x,y: inteiro
+
+inicio
+
+
+x<-2
+y<-0
+
+enquanto x < 60 faca
+      escreval(x," ",y)
+      x <- x * 2
+      y <- y + 10
+fimenquanto
+
+fimalgoritmo
+
+

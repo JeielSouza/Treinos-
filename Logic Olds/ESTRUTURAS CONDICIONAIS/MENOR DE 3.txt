@@ -1,0 +1,65 @@
+VAR : 
+
+v1,v2,v3: inteiro
+
+
+9
+9
+3
+
+
+se (v1 <  v2)  e (v1<v3) entao          
+   escreval(v1)
+senao 
+ se (v2 < v1) e (v2<v3) entao      
+    escreval(v2)
+senao 
+ se (v3 < v1)  e (v3 < v2) entao   
+   escreval (v3)
+senao  
+se (v1 = v2) e (v1 = v3) e (v2 = v1) e (v2 = v3) e (v3 = v2 ) e (v3 = v1) então
+    escreval (v1)
+ 
+
+fimse
+fimse
+fimse
+fimse
+
+
+//// JEITO DO CURSO ///
+
+
+var
+ 
+a,b,c,menor: inteiro
+
+inicio
+
+escreva("primeiro valor: ")
+leia(a)
+escreva("segundo valor: ")
+leia(b)
+escreva("terceiro valor: ")
+leia(c)
+
+
+6
+7
+8
+
+
+
+se (a < b) e (a < c) entao   F              
+    menor <- a
+senao
+  se b < c entao        
+    menor <- b
+senao 
+    menor <- c  
+fimse
+fimse
+
+escreval("MENOR: ", menor)
+
+fimalgoritmo

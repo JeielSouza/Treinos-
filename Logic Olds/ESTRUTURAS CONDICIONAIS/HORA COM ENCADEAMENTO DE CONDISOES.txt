@@ -1,0 +1,99 @@
+/// sem encadeamento
+
+algoritmo "teste_condicional"
+
+var
+
+hora: inteiro
+
+inicio
+
+escreva("Digite o HORARIO: ")
+leia(hora)
+
+
+se hora<12 entao
+   escreval("Bom dia")
+fimse
+
+se (12 <= hora) e (hora < 18) entao
+   escreval("Boa tarde")
+fimse
+
+se (hora > 18) e (hora <= 23) entao
+   escreval("Boa noite")
+fimse
+
+se (hora > 23) entao
+   escreval("horario não identificado")
+fimse
+
+
+
+
+
+fimalgoritmo
+
+
+//// COM ENCADEAMENTO 
+
+
+algoritmo "teste_condicional"
+
+var
+
+hora: inteiro
+
+inicio
+
+escreva("Digite o HORARIO: ")
+leia(hora)
+
+
+se hora < 12 entao
+   escreval("Bom dia")
+senao
+ se (hora >= 12)e(hora < 18) entao
+ escreval("Boa tarde")
+senao
+ escreval("Boa Noite")
+ fimse
+fimse
+
+
+fimalgoritmo
+
+
+///// COM ENCADEAMENTO E SIMPLIFICADO
+
+algoritmo "teste_condicional"
+
+var
+
+hora: inteiro
+
+inicio
+
+escreva("Digite o HORARIO: ")
+leia(hora)
+
+
+se hora < 12 entao     // se a hora é >12 (menor que 12) , ela automaticamente não vai ser >=12 (maior ou igual a 12) 
+   escreval("Bom dia")
+senao
+ se hora < 18 entao
+ escreval("Boa tarde")
+senao
+ escreval("Boa Noite")
+ fimse
+fimse
+
+
+fimalgoritmo
+
+
+
+
+
+
+

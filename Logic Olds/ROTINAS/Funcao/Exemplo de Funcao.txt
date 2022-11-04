@@ -1,0 +1,28 @@
+algoritmo "Teste Funcao"
+
+var
+
+n1,n2,res: inteiro
+
+funcao Soma(a,b: inteiro):inteiro
+var
+s: inteiro
+inicio
+
+s <- a+b
+retorne s
+
+fimfuncao
+
+
+inicio
+
+n1 <- 5
+n2 <- 4
+res <- Soma(n1,n2)
+
+escreval(res)
+
+fimalgoritmo
+
+

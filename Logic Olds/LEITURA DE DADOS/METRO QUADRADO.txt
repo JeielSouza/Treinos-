@@ -1,0 +1,29 @@
+algoritmo "metro_quadrado"
+
+var
+
+b,a,resu1,pricem,resu2: real
+
+inicio
+
+escreval("========*METRO QUADRADO*===========")
+escreval
+escreva("DIGITE O VALOR DA ALTURA(H): ")
+leia(a)
+escreval
+escreva("DIGITE O VALOR DA BASE(B): ")
+leia(b)
+escreval
+escreva("DIGITE O VALOR DO METRO QUADRADO: ")
+leia(pricem)
+
+resu1 <- a * b
+resu2 <- pricem * resu1
+
+escreval("====================")
+escreval
+escreval("VALOR AREA TOTAL DO TERRENO: ", resu1:8:1, " METROS QUADRADOS")
+escreval
+escreval("VALOR DO PRECO DO TERRENO: R$ ",resu2:8:2)
+
+fimalgoritmo

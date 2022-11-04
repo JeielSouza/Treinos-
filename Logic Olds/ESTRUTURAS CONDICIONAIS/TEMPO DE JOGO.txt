@@ -1,0 +1,25 @@
+algoritmo "Tempo"
+
+var
+
+i,t,d: inteiro
+
+
+inicio
+
+escreva("Digite a hora de inicio: ")
+leia(i)
+escreva("Digite a hora de termino: ")
+leia(t)
+
+se i >= t entao
+d <- (24 - i ) + t
+escreval("Duracao total: ",d)
+senao
+d <- t - i
+escreval("Duracao total: ",d)
+fimse
+
+
+
+fimalgoritmo

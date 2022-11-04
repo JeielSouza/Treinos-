@@ -1,0 +1,12 @@
+algoritmo "para_reteste"
+
+var
+x: inteiro
+
+inicio
+
+para x de 1 ate 10 passo 2 faca
+ escreval("valor de x = ", x)
+fimpara
+
+fimalgoritmo

@@ -1,0 +1,45 @@
+algoritmo "Media_pares"
+
+var
+
+a: vetor [0..99] de inteiro
+media: real
+n,i,soma,acu: inteiro
+
+inicio
+
+soma <- 0
+acu <- 0
+
+escreva("Digite quantos numeros vais digitar: ")
+leia(n)
+
+para i de 0 ate n-1 faca
+
+     escreva("Digite seu numero: ")
+     leia(a[i])
+fimpara
+
+para i de 0 ate n-1 faca
+     se a[i]%2 = 0 entao
+        soma <- soma + a[i]
+        acu <- acu + 1
+     fimse
+fimpara
+
+media <- soma / acu
+
+
+ escreval
+
+se media = 0 entao
+   "SEM NUMEROS PARES"
+senao
+    escreva("MEDIA DOS PARES: ", media:5:1)
+    escreval
+    escreva("QUANTIDADE DOS PARES: ", acu)
+fimse
+
+
+
+fimalgoritmo

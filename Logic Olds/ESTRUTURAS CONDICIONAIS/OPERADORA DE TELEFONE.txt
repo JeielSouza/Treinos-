@@ -1,0 +1,83 @@
+algoritmo "telefone"
+
+var
+
+minutos, total, exe: real
+
+inicio
+
+  escreva("digite a quantidade de minutos: ")
+leia(minutos)
+
+
+// 100 minutos custam 50.00
+// cada minuto ultrapassado custa 2 reais amais
+
+se minutos > 100 entao                                                                                 //  V
+    exe <- ((100 - minutos) * -2 ) + 50                                                               // EXE <-  ((100 - 103)*2)+50
+    escreval("TOTAL  A PAGAR: R$", exe:5:2)                                                    //  exe <- 90
+senao
+    exe <- 50
+    escreval("TOTAL  A PAGAR: R$", exe:5:2)
+fimse
+
+fimalgoritmo
+
+================/////////////// expressao usada no curso ///////////////////=====================
+
+algoritmo "telefone"
+
+var
+
+minutos: real
+valorPago: real
+
+inicio
+
+  escreva("digite a quantidade de minutos: ")
+leia(minutos)
+
+
+// 100 minutos custam 50.00
+// cada minuto ultrapassado custa 2 reais amais
+
+valorPago <- 50.00
+
+se minutos > 100 entao                                                                                
+    valorPago <- valorPago + 2 * (minutos - 100)                                               
+    escreval("TOTAL  A PAGAR: R$", valorPago:5:2)                                                    
+senao
+    escreval("TOTAL  A PAGAR: R$", valorPago:5:2)
+fimse
+
+fimalgoritmo
+
+========== S E G U N D O M E T O D O ================
+
+algoritmo "telefone"
+
+var
+
+minutos: real
+valorPago: real
+
+inicio
+
+  escreva("digite a quantidade de minutos: ")
+leia(minutos)
+
+
+// 100 minutos custam 50.00
+// cada minuto ultrapassado custa 2 reais amais
+
+valorPago <- 50.00
+
+se minutos > 100 entao                                                                                
+    valorPago <- valorPago + 2 * (minutos - 100)                                               
+    escreval("TOTAL  A PAGAR: R$", valorPago:5:2)                                                    
+fimse 
+
+    escreval("TOTAL  A PAGAR: R$", valorPago:5:2)
+
+
+fimalgoritmo

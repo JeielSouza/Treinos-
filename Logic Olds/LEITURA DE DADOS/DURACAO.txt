@@ -1,0 +1,27 @@
+algoritmo "CONTAGEM_SEGUNDOS"
+
+var
+
+MinutosTotal,Segundos,SegundosTotais,Horas,Minutos:inteiro
+
+inicio
+
+escreval("===============")
+escreval("S E G U N D O S")
+escreval("===============")
+escreval
+escreva("DIGITE A QUANTIDADE DE SEGUNDOS: ")
+leia(SegundosTotais)
+Escreval()
+
+MinutosTotal <- SegundosTotais \ 60
+Segundos <- SegundosTotais % 60
+Horas <- MinutosTotal \ 60
+Minutos <- MinutosTotal % 60
+
+Escreval("=============================")
+Escreval(horas,"h :",minutos,"m :",segundos,"s")
+
+
+
+fimalgoritmo

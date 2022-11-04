@@ -1,0 +1,26 @@
+algoritmo "raiz"
+
+var
+
+x: real
+t: caractere
+
+// CASO E o proama encerra, caso S ele inicia
+
+inicio
+
+escreval("Digite S para comecar ou E para sair: ")
+leia(t)
+
+
+enquanto t = "s" faca
+     escreval("Digite o numero para saber a raiz: ")
+     leia(x)
+     x <- raizQ(x)
+     escreval("RESULTADO: ", x)
+
+     escreval("Digite S para comecar ou E para sair: ")
+     leia(t)
+fimenquanto
+
+fimalgoritmo

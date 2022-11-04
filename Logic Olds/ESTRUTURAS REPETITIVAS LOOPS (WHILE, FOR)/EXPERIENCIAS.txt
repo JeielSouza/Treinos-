@@ -1,0 +1,61 @@
+algoritmo "COBAIAS_EXPERIENCE"
+
+var
+
+c,r,s,i,testes,qtd,tc:inteiro
+pc,pr,ps: real
+tip: caractere
+
+inicio
+
+escreva("Digite o numero de testes aseguir: ")
+leia(testes)
+
+c <- 0
+r <- 0
+s <- 0
+
+para i de 1 ate testes faca
+
+escreva("Digite a quantidade de cobaias: ")
+leia(qtd)
+escreva("Digite o tipo de cobaia (C / R / S): ")
+leia(tip)
+
+se tip = "c" entao
+
+c <- c + qtd
+    senao
+       se tip = "r" entao
+           r <- r + qtd
+               senao
+                 se tip = "s" entao
+                     s <-  s + qtd
+                fimse
+
+       fimse
+
+
+fimse
+
+fimpara
+
+tc <- c + r + s
+pc <- (c / tc) * 100
+pr <- (r / tc) * 100
+ps <- (s / tc) * 100
+
+escreval
+escreval("TOTAL DE COBAIAS: ", tc)
+escreval("")
+escreval("TOTAL DE COELHOS: ", c)
+escreval("TOTAL DE RATOS: ", r)
+escreval("TOTAL DE SAPOS: ", s)
+escreval("")
+escreval("PERCENTUAL DE COELHOS: ", pc:4:2)
+escreval("PERCENTUAL DE RATOS: ", pr:4:2)
+escreval("PERCENTUAL DE SAPOS: ", ps:4:2)
+
+
+fimalgoritmo
+

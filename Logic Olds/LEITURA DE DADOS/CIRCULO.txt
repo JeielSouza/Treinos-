@@ -1,0 +1,25 @@
+algoritmo "RAIO_CIRCULO"
+
+var
+
+vr,a:real
+
+inicio
+
+escreval("===CALCULO RAIO====")
+escreval
+escreva("DIGITE O VALOR DO RAIO: ")
+leia(vr)
+escreval
+
+a <- Pi*(exp(vr,2))
+
+escreval("A ÁREA É: ", a:8:3)
+escreval
+escreval("==================")
+
+fimalgoritmo
+
+
+
+

@@ -1,0 +1,73 @@
+algoritmo "Dados_pessoais"
+
+var
+
+sexo: vetor [0..99] de caractere
+altura: vetor [0..99] de real
+n,i: inteiro
+numeroHomens,Acumulador,AlturasM: real
+menorAltura, maiorAltura, mediaMulher: real
+
+inicio
+
+Acumulador <- 0
+AlturasM <- 0
+numeroHomens <- 0
+
+escreval("VAIS ARAMAZENAR O DADO DE QUANTAS PESSOAS: ")
+leia(n)
+
+escreval
+para i de 0 ate n-1 faca                         // leitor de dados
+     escreval("Altura da ",i+1,"a pessoa: ")
+     leia(altura[i])
+     escreval("Genero da ",i+1,"a pessoa: ")
+     leia(sexo[i])
+     escreval
+fimpara
+
+
+menorAltura <- altura[0]
+para i de 0 ate n-1 faca
+     se menorAltura > altura[i] entao   // verifica e guarda a menor altura
+        menorAltura <- altura[i]
+     fimse
+fimpara
+
+maiorAltura <- altura[0]
+para i de 0 ate n-1 faca
+     se maiorAltura < altura[i] entao   //  verifica e guarda a maior altura
+        maiorAltura <- altura[i]
+     fimse
+fimpara
+
+para i de 0 ate n-1 faca
+     se sexo[i] = "f" entao
+       Acumulador <- Acumulador + 1      // soma de quantas mulheres tem
+       AlturasM <- AlturasM + altura[i]   // Soma todas as alturas de mulheres
+     fimse
+fimpara
+
+mediaMulher <- AlturasM / Acumulador
+
+para i de 0 ate n-1 faca
+     se sexo[i] = "m" entao
+       numeroHomens <- numeroHomens + 1      // conta quantos homens tem
+     fimse
+fimpara
+
+
+
+escreval
+escreval("MENOR ALTURA: ",menorAltura:1:2 )
+escreval("MAIOR ALTURA: ",maiorAltura:1:2)
+escreval("MEDIA ALTURA MULHERES: ",mediaMulher:2:2 )
+escreval("NUMERO DE HOMENS: ", numeroHomens)
+escreval("NUMERO DE MULHERES: ", Acumulador)
+
+
+
+
+
+
+fimalgoritmo

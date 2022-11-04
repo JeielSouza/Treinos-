@@ -1,0 +1,30 @@
+algoritmo "somas_looping"
+
+var
+
+x,s: inteiro
+
+// x numero a ser digitado
+// s soma
+
+
+inicio
+
+escreva("Digite o primeiro numero: ")
+leia (x)
+
+s <- 0
+
+enquanto x <> 0 faca
+s <- s + x
+escreva("Digite outro numero: ")
+leia(x)
+
+
+fimenquanto
+
+escreval(s)
+
+
+
+fimalgoritmo

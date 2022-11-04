@@ -1,0 +1,51 @@
+algoritmo "tabuada_somas"
+
+var
+
+t,x,s,r,i: inteiro
+op,com: caractere
+
+inicio
+
+escreva("COMECAR?(S/N): ")
+leia(com)
+
+
+enquanto com = "s" faca
+escreva("DIGITE DE QUAL NUMERO É A TABUADA: ")
+leia(t)
+escreva("QUAL A OPERACAO?: ")
+leia(op)
+escreval
+
+para i de 1 ate 10 faca
+
+    escreva(t," ",op," ",i," = ")
+    se op = "+" entao
+       r <- t + i
+       senao
+         se op = "-" entao
+             r <- t-i
+        fimse
+    fimse
+       leia(s)
+       enquanto s <> r faca
+           escreva("Numero errado, tente de novo: ")
+           leia(s)
+
+       fimenquanto
+       
+    escreval("NUMERO CORRETO! ",r)
+fimpara
+
+escreva("CONTINUAR?(S/N): ")
+leia(com)
+
+se com = "s" entao
+   limpatela
+fimse
+
+fimenquanto
+
+fimalgoritmo
+

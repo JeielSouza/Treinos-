@@ -1,0 +1,38 @@
+ALGORITMO "MEDIA_IDADES"
+
+var
+
+nome1,nome2: caractere
+idade1,idade2,mediaid: real
+
+inicio
+
+escreval("==*MEDIA IDADES PROGAM*===")
+escreval()
+escreval("DADOS DA PRIMEIRA PESSOA: ")
+escreval
+escreva("NOME: ")
+leia(nome1)
+escreval
+escreva("IDADE: ")
+leia(idade1)
+escreval
+
+escreval("DADOS DA SEGUNDA PESSOA: ")
+escreval
+escreva("NOME: ")
+leia(nome2)
+escreval
+escreva("IDADE: ")
+leia(idade2)
+escreval
+
+mediaid <- (idade1 + idade2) / 2
+
+escreval("A MEDIA DE IDADE DA(O) ", nome1, " E DA(O) ", nome2, " É IGUAL A: ", mediaid:8:1)
+
+fimalgoritmo
+
+
+
+

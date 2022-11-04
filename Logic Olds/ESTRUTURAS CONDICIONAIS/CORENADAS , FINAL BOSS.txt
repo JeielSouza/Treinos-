@@ -1,0 +1,51 @@
+algoritmo "cordenadas"
+
+var
+
+x,y: real
+q: caractere
+
+inicio
+
+escreva("Digite X: ")
+leia(x)
+escreva("Digite Y: ")
+leia(y)
+
+se (x < 0)e(y > 0)entao
+q <- "Q2"
+escreval(q)
+senao
+se (y > 0)e(x > 0)entao
+q <- "Q1"
+escreval(q)
+senao
+se (y < 0)e(x < 0)entao
+q <- "Q3"
+escreval(q)
+senao
+se (x > 0)e(y < 0)entao
+q <- "Q4"
+escreval(q)
+senao
+se (y = 0)e((x > 0) ou (x < 0))entao
+q <- "Eixo X"
+escreval(q)
+senao
+se (x = 0)e((y > 0) ou (y < 0))entao
+q <- "Eixo Y"
+escreval(q)
+
+senao
+escreval("O ponto esta na Origem")
+
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+
+fimalgoritmo
+
+---------- RESOLVI MELHOR QUE O PROFESSOR --------

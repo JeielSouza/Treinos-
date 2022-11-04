@@ -1,0 +1,89 @@
+usa estrutura relativamente grande
+
+pode ser feito com escolha, ou com encadeamento mesmo
+
+eh um conceito abstrato de banco de dados, obviamente nunca vamos fazer isso.
+
+BASE: cod 1 = 5.00
+      cod 2 = 3.50
+      cod 3 = 4.80
+      cod 4 = 8.90
+      cod 5 = 7.32
+
+
+--------------------------------------------
+
+Algoritmo "lanchonete"
+
+
+var
+
+quant, cod: inteiro
+price: real
+
+
+// cod vai de 1 a 5
+
+
+inicio
+
+escreva("Digite o codigo do produto comprado: ")   //3      
+leia(cod)
+escreva("Digite a quantidade: ")              //23            
+leia(quant)
+
+
+se cod = 1 entao
+price <- 5.00 * quant                             //F 
+escreval("VALOR A PAGAR: ", price:6:2)
+senao 
+  se cod = 2 entao
+  price  <- 3.50 * quant                         //F 
+  escreval("VALOR A PAGAR: ", price:6:2)
+senao
+se cod = 3 entao
+price  <- 4.80 * quant                           //V   4.80 x 23 = 110.40
+escreval("VALOR A PAGAR: R$ ", price:6:2)          //VALOR A PAGAR: R$ 110.40
+
+senao
+se cod = 4 entao
+price  <- 8.90 * quant
+escreval("VALOR A PAGAR: ", price:6:2)
+
+senao 
+price  <- 7.32 * quant 
+escreval("VALOR A PAGAR: ", price:6:2)
+
+fimse
+fimse
+fimse
+fimse 
+
+
+fimalgoritmo
+
+///////
+
+poderia ser feito com escolha tb, mas não vou fazer, foda-se
+
+====== NO CURSO ELE USA A ESTRUTURA ESCOLHA :) ==== 
+
+
+escolha codigo
+
+caso 1
+ valorPago<- 5.0 * quantidade
+caso 2 
+ valorPago<- 3.5 * quantidade
+caso 3
+  valorPago<- 4.8 * quantidade
+caso 4
+  valorPago<- 8.9 * quantidade
+caso 5 
+  valorPago<-  7.32 * quantidade 
+fim escolha
+
+escreva("Valor a ser pago: R$ ",valorpago)
+
+---
+

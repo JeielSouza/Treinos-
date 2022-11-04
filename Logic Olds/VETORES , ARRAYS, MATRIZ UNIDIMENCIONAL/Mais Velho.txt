@@ -1,0 +1,50 @@
+algoritmo "Mais_velho"
+
+var
+
+nome: vetor [0..99] de caractere
+idade: vetor [0..99] de inteiro
+
+n,i: inteiro
+
+MaisVelho: inteiro
+NomeVelho: inteiro
+
+
+
+inicio
+
+
+
+escreval("Quantas idades vais digitar? ")
+leia(n)
+
+escreval
+
+
+para i de 0 ate n-1 faca
+     escreval("Dados da ",i+1,"a ", "pessoa: ")
+     escreva("Nome: ")
+     leia(nome[i])
+     escreva("Idade: ")
+     leia(idade[i])
+     escreval
+fimpara
+
+MaisVelho <- idade[0]
+
+
+
+para i de 0 ate n-1 faca
+     se MaisVelho < idade[i] entao
+        MaisVelho <- idade[i]
+        NomeVelho <- i
+     fimse
+fimpara
+
+escreval
+escreval("O mais velho e: ")
+escreval("NOME: ", nome[NomeVelho])
+escreval("IDADE: ", MaisVelho)
+
+fimalgoritmo

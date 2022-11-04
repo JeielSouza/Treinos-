@@ -1,0 +1,219 @@
+var
+
+x,y,s,restoX,restoY,i: inteiro
+
+//x = primeiro numero
+//y = segundo numero
+//s = soma dos impares
+//r = verificacao de resto
+
+
+inicio
+
+s <- 0            
+
+escreva("digite um numero: ")                        
+leia(x)
+escreva("digite outro numero: ")                  
+leia(y) 
+
+se x > y entao      //decresente                          
+   restoX <- x % 2                                              
+   restoY <- x % 2                                         
+                                                    
+   se (restoX = 0) e (restoY = 0) entao  
+            
+         para i de x-1 ate y+1 passo -2 faca              
+         
+             s <- s + i
+                               
+         fimpara
+
+               escreval("SOMA =", s)  
+
+      senao 
+
+          se (restoX <> 0) e (restoY = 0) entao          
+
+          para i de x ate y+1 passo -2 faca
+
+               s<- s + i
+
+          fimpara 
+
+              escreval("SOMA =", s)  
+     senao 
+
+         se (restoX = 0) e (restoY <> 0) entao               
+
+             para i de x-1 ate y passo -2 faca
+                
+                  s <- s + i
+             
+                
+
+             fimpara
+
+                escreval("SOMA =", s)  
+
+     senao 
+
+        se (restoX <> 0) e (restoY <> 0) entao     
+           
+        para i de x ate y passo -2 faca  
+              
+              s <- s + i
+        fimpara
+           
+           escreval("SOMA =", s)   
+        
+        fimse 
+        
+         fimse    
+ 
+      fimse                                       
+     
+   fimse 
+ 
+ senao                                        //crecente
+
+   restoX <- x % 2                                               
+   restoY <- x % 2 
+
+   se (restoX = 0) e (restoY = 0) entao           //par par
+              
+       para i de x-1 ate y+1 passo 2 faca   
+                                                                
+              s <- s + i 
+                              
+       fimpara
+
+            escreval("SOMA =", s)  
+   
+  senao
+     
+     se (restoX <> 0) e (restoY = 0) entao      // impar par
+
+          para i de x ate y+1 passo 2 faca
+
+               s<- s + i
+
+          fimpara 
+
+              escreval("SOMA =", s) 
+
+ senao
+  
+   se  (restoX = 0) e (restoY <> 0) entao               // par impar 
+
+             para i de x-1 ate y passo 2 faca
+                
+                  s <- s + i
+             
+                
+
+             fimpara
+
+                escreval("SOMA =", s) 
+
+  senao 
+  
+     se  (restoX <> 0) e (restoY <> 0) entao        //impar impar  
+           
+        para i de x ate y passo 2 faca  
+              
+              s <- s + i
+        fimpara
+           
+           escreval("SOMA =", s)   
+         
+     fimse  
+
+   fimse  
+
+     fimse 
+ 
+   fimse 
+ 
+                          
+fimse  
+
+fimalgoritmo 
+
+
+
+----------------------------
+
+possbilidades 1:  Os numeros foram digitados em ordem crescente ou decrescente?
+     X > Y ?
+     Y > X ? 
+
+2 possibilidades
+
+------
+
+Possibilidades 2: Quem dos numeros é impar e quem é par? dependendo do saber, o algoritmo se altera
+
+   X % 2 = 0 ?
+   Y % 3 = 0 ?  
+
+
+-- verificacao de processos decressente feita
+-- falta a crecente > mudemos apenas o sinal do passo "-2" para "2"
+
+par par   ok                 
+imp par    ok  
+par imp    ok   
+imp imp     
+
+4 possbilidades: cada uma com sua alteracao especifica noa algoritmo 
+------------------------------------------------------------------------------------------
+NOVA TENTATIVA
+----------------------------------
+1- manipular para sempre ser crecente
+2- manipular para todos os resultados serem sempre pares
+--------------
+
+var
+
+x,y,troca,soma,i: inteiro
+
+inicio
+
+soma <- 0
+escreva("Digite dois numeros inteiros: ")    // quero sempre que Y seja menos que X
+leia(x)
+leia(y)
+
+
+se y > x entao
+   troca <- y
+   y <- x
+   x <- troca
+fimse
+
+se (x % 2) = 0 entao
+    x <- x + 1
+senao
+  se (y % 2) = 0 entao
+      y <- y - 1
+  
+  
+  fimse
+
+fimse
+
+para i de y+2 ate x-2 passo 2 faca                // lembrar que ele que saber a soma ENTRE os numeros. 
+     soma <- soma + i
+fimpara
+
+escreval("SOMA DOS IMPARES = ",soma)
+
+
+fimalgoritmo
+
+--------------------- PROBLEMA RESOLVIDO !!
+
+Aprendizado: Elimine muitas possibilidades
+             com manipulacao de variaveis, para fazelas se adequear ao que 
+             o codigo tem como objetivo final de fazer. 

@@ -1,0 +1,97 @@
+algoritmo "Media_ponderada"
+
+var
+
+mp,v1,v2,v3,p1,p2,p3: real
+
+n: inteiro
+
+start: caractere
+
+inicio
+
+Escreva("Deseja começar? (S/N): ")
+leia(start)
+
+p1 <- 2
+p2 <- 3
+p3 <- 5
+
+enquanto start = "s" faca
+
+
+escreval("DIGITE 3 NUMEROS REAIS: ")
+leia(v1)
+leia(v2)
+leia(v3)
+
+
+
+// a soma dos pesos é igual a 10 porem foda-se
+mp <- (v1 * p1 + v2 * p2 + v3 * p3) / (p1 + p2 + p3)
+
+Escreval("MEDIA PONDERADA: ", mp:5:1)
+
+
+Escreva("Deseja continuar? (S/N): ")
+leia(start)
+
+
+fimenquanto
+
+fimalgoritmo
+
+// interessante que eu nao precisaria colocar um "for" so um
+while ja faria
+---------------- 
+
+// LOOPING infinito com a condicao de: a media ser = 0
+
+---------
+
+algoritmo "Media_ponderada"
+
+var
+
+mp,v1,v2,v3,p1,p2,p3: real
+
+n: inteiro
+
+start: caractere
+
+inicio
+
+mp <- 2
+
+p1 <- 2
+p2 <- 3
+p3 <- 5
+
+enquanto mp <> 0 faca
+
+
+escreval("DIGITE 3 NUMEROS REAIS: ")
+leia(v1)
+leia(v2)
+leia(v3)
+
+
+
+// a soma dos pesos é igual a 10 porem foda-se
+mp <- (v1 * p1 + v2 * p2 + v3 * p3) / (p1 + p2 + p3)
+
+Escreval("MEDIA PONDERADA: ", mp:5:1)
+
+
+
+fimenquanto
+
+fimalgoritmo
+
+----------------
+
+
+
+
+EXISTE UM JEITO MAIS DICICIL, ?? COM for? acho q n sla. 
+

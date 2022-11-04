@@ -1,0 +1,81 @@
+algoritmo "Comerciante"
+
+var
+
+Pc: vetor [0..4] de real   // preco de compra
+Pv: vetor [0..4] de real     //  preco de venda
+Lucros: vetor [0..4] de real   // conta dos lucros pv - pc
+Vinte: vetor [0..4] de real   // a parte de 20% compra pc * 0.2
+Dez: vetor [0..4] de real     // a parte de 10% pc * 0.1
+nome: vetor [0..4] de caracter  // nome dos produtos
+
+n,i:inteiro
+ProdDez,ProdVinte,ProdEntre: inteiro
+
+inicio
+
+escreval("Quantos produtos vais dar entrada: ")
+leia(n)
+
+escreval
+
+para i de 0 ate n-1 faca
+     escreval("NOME DO PRODUTO: ")
+     leia(nome[i])
+     escreval("PRECO DE COMPRA: ")          // ok
+     leia(Pc[i])
+     escreval("PRECO DE VENDA: ")         // leitura de dados dos produtos
+     leia(Pv[i])
+fimpara
+
+para i de 0 ate n-1 faca     // calculo 10%  e 20% partes
+     Dez[i] <- Pc[i] * 0.1     // ok
+     Vinte[i] <- Pc[i] * 0.2
+fimpara
+
+
+para i de 0 ate n-1 faca  // calculo de lucro bruto
+     Lucros[i] <- Pv[i] - Pc[i]   // ok
+fimpara
+
+
+escreval
+escreval("Produtos com lucro menor que 10%: ")
+
+para i de 0 ate n-1 faca
+     se Lucros[i] < Dez[i]  entao     // Mostra nome dos produtos com lucro menor que 10%
+        ProdDez <- i                  // ok
+        escreval(nome[ProdDez])
+     fimse
+fimpara
+
+escreval
+
+escreval("Produtos com lucro entre 10% e 20%: ")
+
+para i de 0 ate n-1 faca
+     se (Lucros[i] >= Dez[i]) e (Lucros[i] <= Vinte[i]) entao   // Mostra produtos com o lucro entre 10% e 20%
+        ProdEntre <- i
+        escreval(nome[ProdEntre])            // ok
+     fimse
+fimpara
+
+escreval
+
+escreval("Produtos com lucro acima de 20%: ")   // mostra quais produtos tiveram lucros superiores a 20%
+                                               // ok
+para i de 0 ate n-1 faca
+     se Lucros[i] > Vinte[i] entao
+     ProdVinte <- i
+     escreval(nome[ProdVinte])
+     
+     fimse
+
+fimpara
+
+
+
+
+
+
+fimalgoritmo

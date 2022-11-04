@@ -1,0 +1,48 @@
+algoritmo "dia_semana"
+
+var
+
+x: inteiro
+dia: caractere 
+
+
+inicio
+
+
+leia(x)
+
+se x = 1 entao
+    dia <- domingo
+senao 
+   se x = 2 entao
+dia <- segunda
+senao 
+  se x = 3 entao
+dia <- terca
+senao
+se dia = 4 entao
+dia <- quarta
+senao
+se dia = 5 entao
+    dia<- quinta
+senao
+se dia = 6 entao
+ dia <- sexta
+senao
+se dia = 7 entao
+dia <- sabado
+senao
+escreval("valor nao achado")
+
+
+fimse 
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+
+escreval 
+escreval("O DIA É: ", dia)
+

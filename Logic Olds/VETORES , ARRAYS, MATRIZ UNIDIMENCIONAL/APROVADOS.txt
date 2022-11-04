@@ -1,0 +1,40 @@
+algoritmo "Aprovados"
+
+var
+
+n,i: inteiro
+nome: vetor [0..99] de caractere
+primeiro: vetor [0..99] de real
+segundo: vetor [0..99] de real
+nomeap: inteiro
+
+inicio
+
+escreva("Quantos alunos tem na sala? ")
+leia(n)
+
+escreval
+para i de 0 ate n-1 faca
+     escreva("Digite o nome do aluno: ")
+     leia(nome[i])
+     escreva("Digite a nota do 1B: ")
+     leia(primeiro[i])
+     escreva("Digite a nota do 2B: ")
+     leia(segundo[i])
+     escreval
+     
+fimpara
+
+escreval("ALUNOS APROVADOS: ")
+escreval
+
+para i de 0 ate n-1 faca
+       se (primeiro[i] >= 6.0) e (segundo[i] >= 6.0) entao
+           nomeap <- i
+           escreval("ALUNO(A): ", nome[nomeap] )
+           escreval("NOTAS: ", primeiro[i]:4:1," ", segundo[i]:4:1)
+           escreval
+       fimse
+fimpara
+
+fimalgoritmo

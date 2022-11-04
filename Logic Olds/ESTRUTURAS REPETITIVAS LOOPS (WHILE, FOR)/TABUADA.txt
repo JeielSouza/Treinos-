@@ -1,0 +1,18 @@
+algoritmo "tabuada_dada"
+
+var
+
+n,i,m: inteiro
+
+inicio
+
+escreva("Digite de qual tabuada queres o numero: ")
+leia(n)
+
+para i de 1 ate 10 faca
+  m <- n * i
+  escreval(n," x ",i," = ",m)
+fimpara
+
+fimalgoritmo
+
