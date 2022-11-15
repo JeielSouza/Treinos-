@@ -1,3 +1,5 @@
+// ja estou habituado a essa sintaxe basica, consigo codar sem pensar em como escrever algo, ja esta automatico essa parte. 
+
 #include <stdio.h>
 
 int main()
@@ -26,4 +28,3 @@ printf("A letra que o ponteiro esta apontando no endereco da memoria e: %c", *le
 
 return 0;
 }
-
