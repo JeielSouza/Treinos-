@@ -15,9 +15,9 @@ printf("Seu numero inteiro e: %d\n", inteiro);
 printf("Seu numero flutuante ou real e: %0.3f\n", flutuante);
 printf("Seu numero double e: %0.2lf\n", dobro);
 printf("O caractere que voce quer ver e: %c\n", caractere);
-printf("O tamanho da varaivel inteiro e: %lu\n", inteiro);
+printf("O tamanho da varaivel inteiro e: %lu\n\n", sizeof(inteiro));
 
-printf("\n");
+
 printf("-------------APONTADO------------\n");
 printf("A letra do caractere e: %c\n", caractere);
 printf("A sua pocisao na memoria e: %p\n", letra);
