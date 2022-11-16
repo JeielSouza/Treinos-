@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main()
+{
+  /* int numero = 32;
+   float varis = 32.4551;
+   double dupre = 31.412153232423123;
+   char letre = 'j'; */ 
+
+   char name1[20]; // string do primeiro nome
+   char name2[20]; // string do segundo nome
+   int idade;      // idade do usuario 
+
+  
+  /* printf("Seu numero inteiro e: %d\n", numero);  
+   printf("Seu numero flutuante e: %0.2f\n", varis );
+   printf("Seu numero double e: %0.4lf\n", dupre);
+   printf("Sua letra e: %c\n\n", letre); */
+
+   printf("DIGITE SEU PRIMEIRO NOME: ");              // ler primeiro nome
+   scanf("%s", &name1);
+   printf("DIGITE SEU SEGUNDO NOME: ");              
+   scanf("%s", &name2);                              // ler segundo nome
+   printf("\n");
+   printf("DIGITE A SUA IDADE: ");
+   scanf("%d", &idade);                            // ler a idade
+
+   printf("\n");
+
+   printf("Bem vindo %s %s\n\n", name1, name2);
+
+   printf("\n");
+
+   if (idade != 23)
+   {
+      printf("Nao tens idade suficiente para isso!!");
+   }
+   else 
+   {
+      printf("Os seus %d servem. ", idade);
+   }
+    
+   return 0;
+}

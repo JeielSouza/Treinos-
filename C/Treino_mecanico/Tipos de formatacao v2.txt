@@ -1,12 +1,16 @@
-// ja estou habituado a essa sintaxe basica, consigo codar sem pensar em como escrever algo, ja esta automatico essa parte. 
+/* ja estou habituado a essa sintaxe basica, consigo codar sem pensar em como escrever algo, ja esta automatico essa parte. 
 
+// tendando seguir a filosofia de codar limpo e tentando explicar ao maximo oque o codigo esta fazendo, pois acho pratica de 
+totalmente não profissional manter o codigo de um cliente refém a min. Não sejamos idiotas ou egoistas. 
+
+// 
 #include <stdio.h>
 
 int main()
 {
 
 int inteiro = 321; 
-float flutuante = 23.423;
+float flutuante = 23.423;                           // declaracao de variaveis e seus formatos 
 double dobro = 32131414.5352;
 char caractere = 'z';
 
@@ -17,13 +21,12 @@ printf("Seu numero inteiro e: %d\n", inteiro);
 printf("Seu numero flutuante ou real e: %0.3f\n", flutuante);
 printf("Seu numero double e: %0.2lf\n", dobro);
 printf("O caractere que voce quer ver e: %c\n", caractere);
-printf("O tamanho da varaivel inteiro e: %lu\n\n", sizeof(inteiro));
-
+printf("O tamanho da varaivel inteiro e: %lu\n\n", inteiro);                 // printando variaiveis com seus identificadores, parte do treino de memoria muscular 
 
 printf("-------------APONTADO------------\n");
 printf("A letra do caractere e: %c\n", caractere);
 printf("A sua pocisao na memoria e: %p\n", letra);
-printf("A letra que o ponteiro esta apontando no endereco da memoria e: %c", *letra);
+printf("A letra que o ponteiro esta apontando no endereco da memoria e: %c", *letra);  // area especifica para testar ponteiros. 
 
 
 return 0;

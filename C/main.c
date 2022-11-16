@@ -3,27 +3,34 @@
 int main()
 {
 
-int inteiro = 321; 
-float flutuante = 23.423;
-double dobro = 32131414.5352;
-char caractere = 'z';
-
-char* letra = &caractere;
+   char name1[20]; // string do primeiro nome
+   char name2[20]; // string do segundo nome
+   int idade;      // idade do usuario 
 
 
-printf("Seu numero inteiro e: %d\n", inteiro);
-printf("Seu numero flutuante ou real e: %0.3f\n", flutuante);
-printf("Seu numero double e: %0.2lf\n", dobro);
-printf("O caractere que voce quer ver e: %c\n", caractere);
-printf("O tamanho da varaivel inteiro e: %lu\n\n", sizeof(inteiro));
 
+   printf("DIGITE SEU PRIMEIRO NOME: ");
+   scanf("%s", &name1);                         // ler primeiro nome
+   printf("DIGITE SEU SEGUNDO NOME: ");
+   scanf("%s", &name2);
+   printf("\n");                                // ler segundo nome
+   printf("DIGITE A SUA IDADE: ");
+   scanf("%d", &idade);                        // ler a idade
 
-printf("-------------APONTADO------------\n");
-printf("A letra do caractere e: %c\n", caractere);
-printf("A sua pocisao na memoria e: %p\n", letra);
-printf("A letra que o ponteiro esta apontando no endereco da memoria e: %c", *letra);
+   printf("\n");
 
+   printf("Bem vindo %s %s\n\n", name1, name2);            //exibe os dados com essa minha cambiarra
 
-return 0;
+   printf("\n");
+
+   if (idade != 23)                           // caso a idade digitada seja diferente de 23, exiba a mensagem
+   {
+      printf("Nao tens idade suficiente para isso!!");
+   }
+   else 
+   {                                                   // se a idade for 23 exiba: 
+      printf("Os seus %d servem. ", idade);
+   }
+    
+   return 0;
 }
-
