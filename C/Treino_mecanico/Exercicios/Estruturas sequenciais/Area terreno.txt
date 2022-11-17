@@ -1,0 +1,35 @@
+/*Um progama que ler a medida e comprimento de um terreno, depois sua
+depois da o valor da area e o preco do terreno completo, de acordo com o que foi estipulado
+como preco do metro quadrado. */
+
+
+#include <stdio.h>
+
+int main()
+{
+   
+   float largura;
+   float comprimento;           /*todas as variaveis */
+   float MetroQ; 
+   float AreaT;
+   float PriceT;
+
+   printf("Digite a largura do terreno: ");     // lenda a largura
+   scanf("%f", &largura );
+   printf("Digite o comprimento do terreno: ");    // lendo o comprimento
+   scanf("%f", &comprimento);
+   printf("Digite o valor do metro quadrado: ");  // lendo o valor do metro quadrado 
+   scanf("%f", &MetroQ);
+    
+   printf("\n");
+
+   AreaT = largura * comprimento;
+   PriceT = AreaT * MetroQ;                       // fazendo as operacoes 
+
+   printf("Area do terreno: %0.2f\n", AreaT );                 // exibindo saida final
+   printf("Preco do terreno: R$ %0.2f", PriceT);
+   
+   
+   return 0;
+}
+
