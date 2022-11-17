@@ -1,0 +1,52 @@
+# Pré-requisitos
+* .d
+
+# Arquivos de objeto
+* .o
+* .ko
+* .obj
+* .elf
+
+# Saída do vinculador
+* .ilk
+* .mapa
+* .exp
+
+# Cabeçalhos pré-compilados
+* .gch
+* .pch
+
+# Bibliotecas
+* .lib
+* .a
+* .la
+* .lo
+
+# Objetos compartilhados (incluindo DLLs do Windows)
+* .dll
+* .so
+* .so. *
+* .dylib
+
+# executáveis
+* .exe
+* .fora
+* .aplicativo
+* .i * 86
+* .x86_64
+* .hex
+
+# Depurar arquivos
+* .dSYM /
+* .su
+* .idb
+* .pdb
+
+# Resultados da Compilação do Módulo do Kernel
+* .mod *
+* .cmd
+.tmp_versions /
+módulos.ordem
+Módulo.symvers
+Mkfile.old
+dkms.conf
