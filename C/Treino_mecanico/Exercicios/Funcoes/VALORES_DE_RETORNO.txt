@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int valor(int x)                     // retornando a soma de um valor e qualquer coisa, precisa especificar o tipo de dado que vai retornar, logo no incio da funcao (int, float, double, char, )
+{
+  return 5 + x;
+}
+
+int func2(int x, int y)           // retornando a soma de dois valores juntos etc.etc.etc a imaginacao e o limite.
+{
+
+  return x + y;
+
+}
+
+
+int main()
+{
+  
+  int numb = 32;
+  int numb1 = 3;
+  int numb2 = 5;
+
+
+  printf("O RESULTADO DISSO E: %d\n", valor(3));
+
+  printf("OU O RESULTADO E: %d\n", valor(numb));
+
+  printf("RETORNO DA SOMA DE DOIS VALORES: %d", func2(numb1, numb2));
+
+  return 0;
+}

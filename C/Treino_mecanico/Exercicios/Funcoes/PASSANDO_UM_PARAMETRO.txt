@@ -1,0 +1,33 @@
+void nome(char name[])
+{
+  printf("Bem vindo: %s\n", name);
+
+
+}
+
+int main()
+
+{
+
+  char nome_um[20];
+  char nome_dois[20];
+  char nome_tres[20];
+
+
+
+  printf("Qual o nome da sua equipe? ");
+  scanf("%s", &nome_um);
+  scanf("%s", &nome_dois);
+  scanf("%s", &nome_tres);
+  printf("\n");
+
+
+
+  nome(nome_um);         
+  nome(nome_dois);
+  nome(nome_tres);
+
+
+
+  return 0;
+}

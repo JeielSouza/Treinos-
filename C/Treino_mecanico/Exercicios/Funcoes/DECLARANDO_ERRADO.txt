@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int somas(int, int);
+
+int main()
+{
+
+  int num1;
+  int num2;
+  int soma = somas(num1, num2);
+
+  printf("Escreva um numero: \n");
+  scanf("%d", &num1);
+  printf("Escreva outro numero: \n");
+  scanf("%d", &num2);
+  printf("Resultado e: %d", soma);
+
+  return 0;
+}
+
+int somas(int x, int y)
+
+{
+
+return x + y; 
+
+}
+
+
+// é sabido que isso da um valor gigante, pois C é uma linguagem estruturada que executa o codigo de cima para baixo, logo o valor de soma que a varaivel junto com  funcao recebe
+é o valor aleatorio que se encontra dentro dessas variaveis. 
+

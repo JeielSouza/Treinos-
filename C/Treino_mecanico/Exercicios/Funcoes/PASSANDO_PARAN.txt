@@ -1,0 +1,47 @@
+#include <stdio.h>
+#define LANGE 100
+
+void avarage(int x, char nam1[LANGE], char nam2[LANGE])
+{
+
+printf("BEM VINDO: %s %s\n",nam1, nam2);
+printf("SUA IDADE: %d\n", x);
+
+}
+
+void fim()
+{
+  printf("VOLTE SEMPRE");
+}
+
+
+int main()
+{
+
+  char nome1[LANGE];
+  char nome2[LANGE];
+  int idade;
+
+  printf("DIGITE SEU NOME: ");
+  scanf("%s", &nome1);
+  printf("DIGITE SEU SOBRENOME: ");
+  scanf("%s", &nome2);
+  printf("DIGITE SUA IDADE: ");
+  scanf("%d", &idade);
+
+  printf("\n");
+
+  if (idade < 13) 
+  {
+  avarage(idade, nome1, nome2);
+  }
+  else
+  {
+    printf("PREZA %s %s sua idade de %d nao e suficiente ", nome1, nome2, idade);
+  }
+
+
+
+  
+  return 0;
+}

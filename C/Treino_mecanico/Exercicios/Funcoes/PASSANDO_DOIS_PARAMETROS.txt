@@ -1,0 +1,38 @@
+void nome(char name[], int idade)
+{
+  printf("Bem vindo: %s  Sua idade e: %d\n", name, idade);
+
+
+}
+
+int main()
+{
+
+  char nome_um[20];
+  char nome_dois[20];
+  char nome_tres[20];
+
+  int idade_um;
+  int idade_dois;
+  int idade_tres;
+
+  printf("Qual o nome da sua equipe? ");
+  scanf("%s", &nome_um);
+  scanf("%s", &nome_dois);
+  scanf("%s", &nome_tres);
+  printf("\n");
+
+  printf("Qual a idade de ambos? ");
+  scanf("%d", &idade_um);
+  scanf("%d", &idade_dois);
+  scanf("%d", &idade_tres);
+
+
+  nome(nome_um, idade_um);         // eu estaria passando de qualquer forma "nome" e um numero inteiro 
+  nome(nome_dois, idade_dois);
+  nome(nome_tres, idade_tres);
+
+
+
+  return 0;
+}

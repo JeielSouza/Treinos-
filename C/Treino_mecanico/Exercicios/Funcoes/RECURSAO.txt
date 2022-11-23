@@ -1,0 +1,48 @@
+
+
+/*
+Recursão. 
+
+É basicamente (nesse caso) um looping da xuxa, quando a funcao sum() é chamada
+ela adiciona o parametro K a soma de todos os numeros menores que K
+e retorna o resultado. Quando K se torna igual a 0, a funcao retorna apeanas 0
+ao executar o progama faz os seguintes passos.
+
+10 + sum(9)
+10 + sum(9 + sum(8))
+10 + (9 + (8 + sum(7)))
+... assim por diante, ate contabilizar no final 55. 
+
+
+*/
+
+#include <stdio.h>
+
+int sum(int k);
+
+int main()
+{
+
+int result = sum(10);
+printf("%d", result);
+
+
+return 0; 
+
+}
+
+int sum(int k)
+{
+  if (k > 0)
+  {
+    return k + sum( k - 1);
+
+  }
+  else 
+  {
+    return 0; 
+  }
+}
+
+
+// BASICAMENTE é fazer com que uma variavel trabalhe com seus propios valores. 
