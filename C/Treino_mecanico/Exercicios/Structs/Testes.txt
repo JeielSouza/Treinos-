@@ -4,6 +4,7 @@
    As variaveis da estrutura são conhecidas como menbros 
    Pode ter varios tipos de dados dentro dela
 */
+
 #include <stdio.h>
 
 
