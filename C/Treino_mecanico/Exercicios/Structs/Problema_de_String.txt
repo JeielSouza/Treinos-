@@ -1,0 +1,64 @@
+/*
+Resolucao de um problema referente ao fato de um menbro de um struct não suportar naturalmente uma maldita string. 
+lembrando que precisa incluir a biblioteca string.h
+
+*/
+
+#include <stdio.h>
+#include <string.h>
+#define SPC 100 
+
+struct teste 
+
+{
+  char nome[SPC];
+
+};
+
+int main()
+{
+
+  struct teste s1;
+
+  strcpy(s1.nome, "Jeiel Souza");
+
+  printf("Seu nome e: %s", s1.nome);
+
+  
+
+
+
+  return 0;
+}
+
+
+////////////// OUTRO TESTE
+
+#include <stdio.h>
+#include <string.h>
+#define SIZE 100            // eu prefiro declarar constantes com define invez de "Const"
+
+
+struct nomes
+{
+  char name_um[SIZE];
+  char name_dois[SIZE];
+  char name_tres[SIZE];
+
+};
+
+int main()
+{
+
+  struct nomes s1;
+
+  strcpy(s1.name_um, "Jeiel Souza");
+  strcpy(s1.name_dois, "Antonio Souza");
+  strcpy(s1.name_tres, "Lia nagela");
+  
+  printf("Nome do primeiro usuario: %s\n", s1.name_um);
+  printf("Nome do segundo usuario: %s\n", s1.name_dois);
+  printf("Nome do terceiro usuario: %s\n", s1.name_tres);
+
+  return 0;
+}

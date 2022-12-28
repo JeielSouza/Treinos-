@@ -30,3 +30,9 @@ int main()
   
   return 0;
 }
+
+/*
+A utilidade basica de enums, é para tornar mais legivel um sistema de constantes
+é apenas um aprimoramento leve, para dar mais facilidade em manter um codigo.
+
+*/

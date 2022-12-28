@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include<string.h>
+
+/*Declarando varios dados em uma unica linhas. */
+
+
+struct vars
+{
+  char letra;
+  char nome[30];
+  int idade;
+  float saldo;
+
+};
+
+int main()
+
+{
+
+  struct vars s1 = {'B', "Jeiel Souza", 32, 588.21}; // da um erro 
+  struct vars s2;
+  s2 = s1;
+
+  printf("Values: %c, %s, %d, %0.2f\n", s1.letra, s1.nome, s1.idade, s1.saldo);
+  printf("Values: %c, %s, %d, %0.2f", s2.letra, s2.nome, s2.idade, s2.saldo);
+
+
+
+
+  return 0;
+}

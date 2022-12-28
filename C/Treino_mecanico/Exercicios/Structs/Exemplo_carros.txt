@@ -1,0 +1,28 @@
+/* Fazendo um exemplo aplicado a vida real, no caso, faremos com carros*/
+
+#include <stdio.h>
+#include <string.h>
+
+struct car 
+{
+
+  char marca[30];
+  char modelo[30];
+  int ano; 
+
+};
+
+int main()
+{
+
+  struct car s1 = {"BMW", "X7", 2022};
+  struct car s2 = {"AUDI", "R8", 2023};
+  struct car s3 = {"MERCEDES", "CLASS E", 2021};
+
+  printf("Modelo um: %s, %s, %d\n", s1.marca, s1.modelo, s1.ano);
+  printf("Modelo dois: %s, %s, %d\n", s2.marca, s2.modelo, s2.ano);
+  printf("Modelo tres: %s, %s, %d", s3.marca, s3.modelo, s3.ano);
+
+
+  return 0; 
+}
