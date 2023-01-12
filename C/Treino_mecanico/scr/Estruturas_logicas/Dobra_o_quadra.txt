@@ -1,0 +1,33 @@
+/*
+Imprime numero real
+se positivo =  raiz quadra
+else = quadrado 
+*/
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float num = 0; 
+    float quadra = 0; 
+    float raiz = 0; 
+
+    printf("Digite um numero: ");
+    scanf("%f", &num);
+
+    if (num > 0)
+    {
+            raiz = sqrt(num);
+            printf("Raiz é de: %0.2f", raiz);
+    }
+
+    else
+
+    {
+        quadra = num * 2;
+        printf("Tal numero ao quadrado e: %f", quadra);
+    }
+
+    return 0; 
+}

@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    float value = 0; 
+    float total = 0;
+    float comis = 0; 
+    float parcel = 0; 
+
+    printf("VALOR DA COMPRA: R$ ");
+    scanf("%f", &value);
+
+    total = value - (value * 0.1);
+    parcel = total / 3;
+    comis = total * 0.05;
+
+printf("VALOR DA TOTAL COM DESCONTO:  R$ %0.2f\n",total);
+printf("VALOR DA PARECELA EM 3X: R$ %0.2f\n", parcel);
+printf("VALOR DA COMISSÃO DO VENDEDOR: R$ %0.2f\n ", comis);
+
+
+
+    return 0; 
+}

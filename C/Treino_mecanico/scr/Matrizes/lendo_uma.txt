@@ -1,0 +1,67 @@
+
+int main()
+{   
+    int nuns[5][5];
+    int i; 
+    int j; 
+
+    for (i=0; i < 5; i++)
+    {
+        for (j = 0; j < 5; j++)
+        {
+        printf("Digite os numeros: ");
+        scanf("%d", &nuns[i][j]);
+        } 
+    }
+
+   for (i=0; i < 5; i++)
+    {
+        for (j = 0; j < 5; j++)
+        { 
+        printf("numeros: [%d] [%d] %d\n ",i,j,nuns[i][j] );
+        } 
+     
+    }
+
+ 
+    return 0;
+}
+
+
+///////////////////////// LENDO E APRESENTADO POR COLULAS ////////
+
+#include <stdio.h>
+
+int main()
+{   
+    int nuns[3][3];
+    int i; 
+    int j; 
+
+    for (i=0; i < 3; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+        printf("Digite os numeros: ");
+        scanf("%d", &nuns[i][j]);
+        } 
+    }
+
+   for (i=0; i < 3; i++)
+    {
+        printf("\n");
+        for (j = 0; j < 3; j++)
+        { 
+        printf("%d ",nuns[i][j] );
+        } 
+     
+    }
+
+ 
+    return 0;
+}
+
+
+1 2 3
+4 5 6
+7 8 9

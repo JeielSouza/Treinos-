@@ -1,0 +1,89 @@
+/* idades 
+
+ENTRADA
+1. Idade de duas pessoas
+2. Nome das duas pessoas
+
+
+SAIDA
+2. Idade media das duas pessoas
+3. Nomes delas
+4. Idade delas
+
+*/
+
+#include <stdio.h>
+#include <string.h>
+
+struct users{
+
+  char nome[50];
+  int idade;
+
+};
+
+int main(){
+
+struct users s1;
+struct users s2; 
+
+float media = 0;
+char nome_um[50];
+char nome_dois[50];
+
+
+printf("Nome da primeira pessoa: ");           // entrada 
+scanf("%[^\n]%*c", &nome_um);
+printf("Idade da primeira pessoa: ");
+scanf("%d", &s1.idade);
+printf("\n\n");
+
+printf("Nome da segunda pessoa: ");      
+scanf("%[^\n]%*c", &nome_dois);
+printf("Idade da segunda pessoa: ");
+scanf("%d", &s2.idade);
+printf("\n\n");
+
+
+media = (s1.idade + s2.idade) / 2;           // processamento 
+strcpy(s1.nome, nome_um);
+strcpy(s2.nome, nome_dois);
+
+
+printf("NOME PESSOA 1: %s\n ", s1.nome);
+printf("IDADE PESSOA 1: %d\n", s1.idade);          // saida
+
+printf("NOME PESSOA 2: %s\n", s2.nome);
+printf("IDADE PESSOA 2: %d\n\n", s2.idade);
+
+printf("MEDIA DAS IDADES: %0.2f",  media);                           // CONTINUA DANDO BUG 
+
+
+  return 0; 
+}
+
+
+/////////////////////////// TESTE 
+
+#include <stdio.h>
+
+
+int main(){
+
+  char nome[31];
+
+  scanf("%[^\n]%*c", &nome);
+
+  printf("%s", nome);
+
+  return 0; 
+}
+https://stackoverflow.com/questions/6282198/reading-string-from-input-with-space-character.
+
+
+////////
+
+uma ideia que tive vendo um livro, que que da para colocar no structs nome e sobrenome
+e depois concatenar ambos,
+
+logo, não é atoa que é pedido nome e sobrenome em todo software. 

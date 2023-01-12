@@ -1,0 +1,123 @@
+
+/*
+
+foi visto dois erros nesse codigo 
+1 - Da problema se ler primeiro a altura de depois o sexo
+2 - Else if funciona de qualquer forma 
+3 - TAVA dando erro, porque inves deu digitar e testar o M eu tava era digitando 'h'
+4 - o caractere ' ' espaco, e lido como caractere. 
+*/
+
+#include <stdio.h>
+
+int main()
+{
+
+    char sex;
+    float altura = 0;   
+    float resul  = 0;  
+
+    printf("Qual a altura da pessoa?: ");
+    scanf("%f", &altura);
+
+    printf("Qual o sexo da pessoa?: ");
+    scanf("%c", &sex);
+
+    if (sex == 'h')
+    {
+        resul = (72.7 * altura) - 58;
+        printf("O peso ideial desse homen e: %0.2f", resul);
+    }
+
+    else if(sex == 'f')
+    {
+        resul = (62.1 * altura) - 44.7;
+        printf("O peso ideial dessa mulher e: %0.2f", resul);
+
+    }
+    
+    return 0; 
+}
+
+/////////////////// JETIO CERTO  /////////////////////////////
+
+#include <stdio.h>
+#include <string.h>  
+
+int main()
+{
+
+    char sex ; 
+
+
+    float altura = 0;   
+    float resul  = 0;  
+    int value = 0;
+
+
+    printf("Qual o sexo da pessoa?: ");
+    scanf("%c", &sex);
+
+    printf("Qual a altura da pessoa?: ");
+    scanf ("%f", &altura);
+
+     if (sex == 'm') 
+    {
+         resul = (72.7 * altura) - 58;
+        printf("O peso ideial desse homen e: %0.2f", resul);
+    }
+
+    else
+    {
+       
+        resul = (62.1 * altura) - 44.7;
+        printf("O peso ideial dessa mulher e: %0.2f", resul);
+
+    }
+    
+    return 0; 
+}
+  
+
+OU ././///
+
+
+#include <stdio.h>
+#include <string.h>  
+
+int main()
+{
+
+    char sex ; 
+
+
+    float altura = 0;   
+    float resul  = 0;  
+    int value = 0;
+
+
+    printf("Qual o sexo da pessoa?: ");
+    scanf("%c", &sex);
+
+    printf("Qual a altura da pessoa?: ");
+    scanf ("%f", &altura);
+
+     if (sex == 'm') 
+    {
+         resul = (72.7 * altura) - 58;
+        printf("O peso ideial desse homen e: %0.2f", resul);
+    }
+
+    else if (sex == 'f')
+    {
+       
+        resul = (62.1 * altura) - 44.7;
+        printf("O peso ideial dessa mulher e: %0.2f", resul);
+
+    }
+    
+    return 0; 
+}
+
+
+

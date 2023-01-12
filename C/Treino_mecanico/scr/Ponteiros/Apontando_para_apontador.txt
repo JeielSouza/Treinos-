@@ -1,0 +1,27 @@
+
+Exercicio bem divertido para mostrar que simplesmente 
+e facil usar ponteiros para economizar relatviamente espaço em 
+memoria .
+
+
+#include stdio.h
+
+int main()
+{
+    int a = 0;
+    int b; 
+    int c; 
+
+    printf(DIGITE A );
+    scanf(%d, &a);
+    b = &a;                b aponta para o espaco de A
+                         C aponta para o valor que B aponta. 
+    c = b;            
+
+    printf(O dobro do valor é %dn, b2);
+    printf(O triplo vale %d, c3);
+
+
+
+    return 0;
+}

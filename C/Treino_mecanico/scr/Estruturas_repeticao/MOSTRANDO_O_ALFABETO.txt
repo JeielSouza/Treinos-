@@ -1,0 +1,29 @@
+/*
+Temos que no computador o alfabeto é representado pela tabela ASK, que da um codigo de numeros para cada letra 
+logo, podemos usar disso para fazer loopings de caracteres, ou grande arrays, etc. 
+*/
+
+ #include <stdio.h>
+
+ int main()
+ {
+    char Alfa[26];
+    int contador = 0; 
+    int i; 
+    int z;
+
+    for(i = 97; i < 122; i++ )
+    {
+        Alfa[contador] = i;
+        contador = contador + 1;
+    }
+
+    for (z = 0; z < 26 - 1; z++)
+    {
+        printf("A letra é: %c\n", Alfa[z]);
+    }
+
+
+
+    return 0;
+ }

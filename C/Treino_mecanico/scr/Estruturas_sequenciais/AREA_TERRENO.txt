@@ -1,0 +1,38 @@
+/*  terreno!, progama 
+1. ler, a largura e o comprimento de um terreno.
+2. ler o valor do metro quadrado. 
+
+3. Da o valor da area do terreno 
+4. Da o valor do metro quadrado 
+
+*/
+
+
+#include <stdio.h>
+
+int main()
+{
+  float largura = 0; 
+  float comprimento = 0;   
+  float metro_quadrado = 0;
+  float area = 0; 
+  float preco_m4 = 0;
+
+  printf("Digite o valor do comprimento do terreno: ");    // leitura de dados 
+  scanf("%f", &comprimento );
+  printf("Digite o valor da largura do terreno:");
+  scanf("%f", &largura);
+  printf("Digite o valor do metro quadrado ");
+  scanf("%f", &metro_quadrado);
+  printf("\n\n");
+
+  area = comprimento * largura; 
+  preco_m4 = area * metro_quadrado;
+
+  printf("A AREA DO TERRENO E: %0.2f\n", area);
+  printf("O PRECO DO M4 E: R$ %0.2f", preco_m4);      // apresentacao de resultados. 
+
+
+
+  return 0;
+};

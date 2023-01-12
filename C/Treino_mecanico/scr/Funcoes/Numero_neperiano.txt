@@ -1,0 +1,67 @@
+/*O algoritmo funcionou, do  jeito certo, o que deu errado foi simplesmente o fato deu 
+não saber como chegar no resultado final de um numero  neperiano
+
+*/
+
+#include <stdio.h>
+
+double euler(int x);
+void teste(int y);
+
+int main()
+{
+    int numb = 0; 
+    double resultado = 0; 
+    int verif = 0; 
+
+
+    printf("DIGITE O NUMERO N: ");
+    scanf("%d", &numb);
+
+    resultado = euler(numb); 
+
+    teste(numb); 
+    printf("O numero resultado e: %0.5lf\n", resultado);
+   
+
+
+    return 0;
+}
+
+
+
+double euler(int x)
+{
+    int nur = 0; 
+    float result = 0;
+    int i; 
+    int fators = 0;
+    int somas = 0; 
+
+    for (i = 0; i < x + 1; i++)
+    {
+        if ( i == 0 )
+        {
+            fators = 1; 
+        }
+        else 
+        {
+            fators = fators * i; 
+            somas = somas + fators; 
+        }
+
+        nur = nur + 1; 
+    }
+    
+    result = nur / somas; 
+
+    return result; 
+    
+}
+
+void teste (int y)
+{
+
+    printf("Numero: %d\n", y);
+
+}

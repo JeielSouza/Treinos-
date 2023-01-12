@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int num = 0; 
+    float raiz = 0; 
+
+    printf("DIGITE: ");
+    scanf("%d", &num);   
+
+    if (num > 0)
+    {   
+        raiz = sqrt(num); 
+        printf("A raiz quadrada do numero %d e %0.2f", num, raiz);
+    }
+    else 
+    {
+        printf("O numero %d e invalido! ", num); 
+    }
+
+    return 0; 
+}

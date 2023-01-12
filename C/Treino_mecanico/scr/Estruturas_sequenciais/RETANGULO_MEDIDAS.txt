@@ -1,0 +1,47 @@
+/*
+ENTRADA :
+1. Ler base do reatangulo 
+2. Ler altura do retangulo 
+
+SAIDA:
+3.Valor da Area
+4.Perimetro
+5.Diagonal 
+
+4 CASAS DECIMAIS POS VIRGULA. 
+
+*/
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+  float base = 0;
+  float altura = 0;
+
+  float area = 0;
+  float perimetro = 0;
+  float diagonal = 0; 
+
+    printf("VALOR DA BASE: ");
+    scanf("%f", &base);
+    printf("VALOR DA ALTURA: ");           //entrada
+    scanf("%f", &altura);                    
+    printf("\n\n");
+
+    area = base * altura;  
+    perimetro = 2*(base + altura);                // processamento 
+    diagonal = sqrt(pow(altura, 2) + pow(base, 2));
+
+
+
+    printf("AREA: %0.2f\n", area);
+    printf("PERIMETRO: %0.2f\n", perimetro);        // saida 
+    printf("DIAGONAL: %0.2f", diagonal);
+
+
+
+
+  return 0; 
+}

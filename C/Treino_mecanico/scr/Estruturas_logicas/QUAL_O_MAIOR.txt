@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main ()
+{
+    int val_um = 0 ;
+    int val_dois = 0;
+
+    printf("Digite o valor um: "); 
+    scanf("%d", &val_um);
+
+    printf("Digite o valor dois: ");
+    scanf("%d", &val_dois);
+
+    if (val_um > val_dois)
+
+    {   
+        printf("O valor de %d e maior!", val_um);
+    }
+    else 
+    {
+        printf("O valor de %d e maior!", val_dois);
+    }
+    return 0; 
+}
