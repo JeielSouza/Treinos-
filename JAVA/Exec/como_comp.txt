@@ -1,0 +1,5 @@
+javac nome.java     
+
+<CRIA UM ARQUIVO CLASS>
+
+java nome 
