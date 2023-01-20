@@ -53,3 +53,4 @@ O ENDERECO DE MEMORIA DE NUMERO E: 6422300
 =============================================================================
 
 /*O conceito, entrou 80% na minha cabeca, porem ainda existem uns 10% que so vou intender resolvendo muitos problemas*/
+commitei errado sem querer 
