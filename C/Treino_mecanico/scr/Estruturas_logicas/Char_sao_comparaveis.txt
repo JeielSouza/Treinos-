@@ -1,0 +1,27 @@
+
+/*TESTANDO SE UM PROGAMA REALMENTE E CAPAS DE COMPRARA CARACTERES, DE UMA VEZ POR TODAS. */
+#include <stdio.h>
+#include "func.h"
+
+int main()
+{
+    char sinal_a_comparar; // nem vai precisar
+    char sinal_entrada; 
+
+    printf("Digite o sinal: ");
+    scanf("%c", &sinal_entrada);
+
+    if(sinal_entrada == '-')
+    {
+        printf("E UMA CONTA DE SUBTRACAO");
+
+    }
+    else if(sinal_entrada == '+')
+    {
+        printf("E UMA CONTA DE SOMA");
+
+    }
+
+
+    return 0; 
+}

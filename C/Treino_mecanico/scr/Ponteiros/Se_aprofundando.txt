@@ -1,0 +1,55 @@
+/* REVISANDO PONTEIROS */
+#include <stdio.h>
+#include "func.h"
+
+int main()
+{
+
+    int numero = 23; 
+    emcremento(&numero); // emcremento recebe o espaco de numero;
+    printf("\n");
+    printf("O ENDERECO DE MEMORIA DE NUMERO E: %d", &numero );
+
+
+
+    return 0; 
+}
+
+
+======== BIBLIOTEC ================
+
+#ifndef FUNC_H
+#define FUNC_H
+#include<stdio.h>
+
+void emcremento (int * pont)
+{
+
+    printf("O POINT APONTA PARA: %d\n", *pont );   // mostra qual o valor que esta armazenado na memoria que pont esta apontando!
+    printf("O ENDERECO DE MEMORIA DE PONT E: %d\n", &pont); // mostra o endereco de memoria da variavel ponteiro pont !
+    printf("\n");
+    printf("POS INCREMENTO: ");
+    printf("\n");                                      
+    printf("O POINT AGORA VALE: %d\n", ++*pont );  // incrementa mais um no valor que esta armazenado na variavel que pont esta apontando 
+    printf("O ENDERECO DE POINT E:  %d\n", &pont ); // ah sei la man
+    printf("O POINT APONTA PARA O ENDERECO: %p", pont );
+}
+
+
+#endif
+
+
+==================// O Que o console retorna //================================
+
+POINT APONTA PARA: 23
+O ENDERECO DE MEMORIA DE PONT E: 6422272
+
+POS INCREMENTO:
+O POINT AGORA VALE: 24
+O ENDERECO DE POINT E:  6422272
+O POINT APONTA PARA O ENDERECO: 0061FF1C
+O ENDERECO DE MEMORIA DE NUMERO E: 6422300
+
+=============================================================================
+
+/*O conceito, entrou 80% na minha cabeca, porem ainda existem uns 10% que so vou intender resolvendo muitos problemas*/

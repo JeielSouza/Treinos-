@@ -1,0 +1,53 @@
+========= // ARQUIVO MAIN.C //===========================
+/* FUNCAO DE DESENHO 
+1- RECEBE UM VALOR INTEIRO 
+2- GERA N LINHAS COM PONTOS DE EXCLAMCACAO 
+ex: N = 5   
+!
+!!
+!!!
+!!!!
+!!!!! 
+
+PROGAMA FUNCIONAL, POREM AINDA EXISTE O MISTERIO DO PORQUE O PRINT RETORNA STRIGNS COM SUGEIRAS. não da para entender isso.   */
+
+
+#include <stdio.h>
+#include "func.h"
+
+int main()
+{ 
+int n = 0; 
+
+printf("Digite quantas linhas de ! vai ser: ");
+scanf("%d", &n);
+printf("\n");
+
+desenho(n);
+
+
+    return 0;
+}
+
+
+==========// ARQUIVO FUNC.H "BIBLIOTECA USADA" // ===================
+
+#ifndef FUNC_H
+#define FUNC_H
+
+void desenho(int linhas)
+{
+    int i;
+    char sequencia[20];
+
+    for (i = 0; i < linhas; i++)
+    {
+        sequencia[i] = '!';
+
+        printf("%s\n", sequencia);
+    }
+
+}
+
+
+#endif

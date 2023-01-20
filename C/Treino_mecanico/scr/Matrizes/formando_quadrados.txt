@@ -1,0 +1,50 @@
+/* FUNCAO DE DESENHO 
+1- RECEBE UM VALOR INTEIRO 
+2- GERA N LINHAS COM PONTOS DE EXCLAMCACAO 
+ex: N = 5   
+!
+!!
+!!!
+!!!!
+!!!!!   */
+#include <stdio.h>
+#include "func.h"
+
+int main()
+{ 
+
+
+    int num; 
+    int i; // linha
+    int j;  // coluna 
+
+
+    printf("Digite quantas linhas tem a matriz: ");
+    scanf("%d", &num);
+
+    char desenho [num][num]; 
+
+    for(i = 0; i < num; i++)
+    {
+        printf("\n");
+            for(j = 0; j < num; j++)
+            {
+                desenho [i][j] = '!';
+
+             }   
+    } 
+
+
+        for(i = 0; i < num; i++)
+    {
+        printf("\n");
+            for(j = 0; j < num; j++)
+            {
+                printf( "%c" ,desenho [i][j]);
+
+             }   
+    } 
+
+
+    return 0;
+}
