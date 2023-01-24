@@ -1,0 +1,18 @@
+/* REVISANDO PONTEIROS */
+#include <stdio.h>
+#include "func.h"
+
+int main()
+{
+
+    int numero[5] = {1 , 2 ,3, 4 , 5};  // na verdade é 0 1 2 3 4 
+    int i;
+
+    for (i = 0; i < 5; i++)                // aqui é a quantidade de elemento - 1 , so que nesse nao precisa, porque a < b já é um "menos 1"
+    {
+        printf("ENDERECO DO ELEMENTO [%d]  = %p e seu tamanho de memoria e: %ld\n", i, &numero[i], sizeof(numero[i]));
+        printf("O VALOR DE NUMERO[%d] = %d\n", i, numero[i]);
+    }
+
+    return 0;   
+}

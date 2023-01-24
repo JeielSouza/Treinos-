@@ -1,0 +1,289 @@
+#include <stdio.h>
+
+int main()
+{
+    int array[10][10]; 
+    int i;
+    int j; 
+
+    for (i = 0; i < 10; i++)
+    {
+        //  printf("ARRAY[%d][%d] = %p\n",i, j , array[i][j]);
+            for(j = 0; j < 10; j++)
+            {
+                 printf("ARRAY[%d][%d] = %d\n",i, j , &array[0][j]);
+            }
+    }
+
+    return 0; 
+}
+
+========= CONSOLE COM %p ===============
+ARRAY[0][0] = 0061FD88
+ARRAY[0][1] = 0061FD8C
+ARRAY[0][2] = 0061FD90
+ARRAY[0][3] = 0061FD94
+ARRAY[0][4] = 0061FD98
+ARRAY[0][5] = 0061FD9C
+ARRAY[0][6] = 0061FDA0
+ARRAY[0][7] = 0061FDA4
+ARRAY[0][8] = 0061FDA8
+ARRAY[0][9] = 0061FDAC
+ARRAY[1][0] = 0061FD88
+ARRAY[1][1] = 0061FD8C
+ARRAY[1][2] = 0061FD90
+ARRAY[1][3] = 0061FD94
+ARRAY[1][4] = 0061FD98
+ARRAY[1][5] = 0061FD9C
+ARRAY[1][6] = 0061FDA0
+ARRAY[1][7] = 0061FDA4
+ARRAY[1][8] = 0061FDA8
+ARRAY[1][9] = 0061FDAC
+ARRAY[2][0] = 0061FD88
+ARRAY[2][1] = 0061FD8C
+ARRAY[2][2] = 0061FD90
+ARRAY[2][3] = 0061FD94
+ARRAY[2][4] = 0061FD98
+ARRAY[2][5] = 0061FD9C
+ARRAY[2][6] = 0061FDA0
+ARRAY[2][7] = 0061FDA4
+ARRAY[2][8] = 0061FDA8
+ARRAY[2][9] = 0061FDAC
+ARRAY[3][0] = 0061FD88
+ARRAY[3][1] = 0061FD8C
+ARRAY[3][2] = 0061FD90
+ARRAY[3][3] = 0061FD94
+ARRAY[3][4] = 0061FD98
+ARRAY[3][5] = 0061FD9C
+ARRAY[3][6] = 0061FDA0
+ARRAY[3][7] = 0061FDA4
+ARRAY[3][8] = 0061FDA8
+ARRAY[3][9] = 0061FDAC
+ARRAY[4][0] = 0061FD88
+ARRAY[4][1] = 0061FD8C
+ARRAY[4][2] = 0061FD90
+ARRAY[4][3] = 0061FD94
+ARRAY[4][4] = 0061FD98
+ARRAY[4][5] = 0061FD9C
+ARRAY[4][6] = 0061FDA0
+ARRAY[4][7] = 0061FDA4
+ARRAY[4][8] = 0061FDA8
+ARRAY[4][9] = 0061FDAC
+ARRAY[5][0] = 0061FD88
+ARRAY[5][1] = 0061FD8C
+ARRAY[5][2] = 0061FD90
+ARRAY[5][3] = 0061FD94
+ARRAY[5][4] = 0061FD98
+ARRAY[5][5] = 0061FD9C
+ARRAY[5][6] = 0061FDA0
+ARRAY[5][7] = 0061FDA4
+ARRAY[5][8] = 0061FDA8
+ARRAY[5][9] = 0061FDAC
+ARRAY[6][0] = 0061FD88
+ARRAY[6][1] = 0061FD8C
+ARRAY[6][2] = 0061FD90
+ARRAY[6][3] = 0061FD94
+ARRAY[6][4] = 0061FD98
+ARRAY[6][5] = 0061FD9C
+ARRAY[6][6] = 0061FDA0
+ARRAY[6][7] = 0061FDA4
+ARRAY[6][8] = 0061FDA8
+ARRAY[6][9] = 0061FDAC
+ARRAY[7][0] = 0061FD88
+ARRAY[7][1] = 0061FD8C
+ARRAY[7][2] = 0061FD90
+ARRAY[7][6] = 0061FDA0
+ARRAY[7][7] = 0061FDA4
+ARRAY[7][8] = 0061FDA8
+ARRAY[7][9] = 0061FDAC
+ARRAY[8][0] = 0061FD88
+ARRAY[8][1] = 0061FD8C
+ARRAY[8][2] = 0061FD90
+ARRAY[8][3] = 0061FD94
+ARRAY[8][4] = 0061FD98
+ARRAY[8][5] = 0061FD9C
+ARRAY[8][6] = 0061FDA0
+ARRAY[8][7] = 0061FDA4
+ARRAY[8][8] = 0061FDA8
+ARRAY[8][9] = 0061FDAC
+ARRAY[9][0] = 0061FD88
+ARRAY[9][1] = 0061FD8C
+ARRAY[9][2] = 0061FD90
+ARRAY[9][3] = 0061FD94
+ARRAY[9][4] = 0061FD98
+ARRAY[9][5] = 0061FD9C
+ARRAY[9][6] = 0061FDA0
+ARRAY[9][7] = 0061FDA4
+ARRAY[9][8] = 0061FDA8
+ARRAY[9][9] = 0061FDAC
+
+========= CONSOLE COM %d ===============
+
+ARRAY[0][0] = 6421896
+ARRAY[0][1] = 6421900
+ARRAY[0][2] = 6421904
+ARRAY[0][3] = 6421908
+ARRAY[0][4] = 6421912
+ARRAY[0][5] = 6421916
+ARRAY[0][6] = 6421920
+ARRAY[0][7] = 6421924
+ARRAY[0][8] = 6421928
+ARRAY[0][9] = 6421932
+ARRAY[1][0] = 6421896
+ARRAY[1][1] = 6421900
+ARRAY[1][2] = 6421904
+ARRAY[1][3] = 6421908
+ARRAY[1][4] = 6421912
+ARRAY[1][5] = 6421916
+ARRAY[1][6] = 6421920
+ARRAY[1][7] = 6421924
+ARRAY[1][8] = 6421928
+ARRAY[1][9] = 6421932
+ARRAY[2][0] = 6421896
+ARRAY[2][1] = 6421900
+ARRAY[2][2] = 6421904
+ARRAY[2][3] = 6421908
+ARRAY[2][4] = 6421912
+ARRAY[2][5] = 6421916
+ARRAY[2][6] = 6421920
+ARRAY[2][7] = 6421924
+ARRAY[2][8] = 6421928
+ARRAY[2][9] = 6421932
+ARRAY[3][0] = 6421896
+ARRAY[3][1] = 6421900
+ARRAY[3][2] = 6421904
+ARRAY[3][3] = 6421908
+ARRAY[3][4] = 6421912
+ARRAY[3][5] = 6421916
+ARRAY[3][6] = 6421920
+ARRAY[3][7] = 6421924
+ARRAY[3][8] = 6421928
+ARRAY[3][9] = 6421932
+ARRAY[4][0] = 6421896
+ARRAY[4][1] = 6421900
+ARRAY[4][2] = 6421904
+ARRAY[4][3] = 6421908
+ARRAY[4][4] = 6421912
+ARRAY[4][5] = 6421916
+ARRAY[4][6] = 6421920
+ARRAY[4][7] = 6421924
+ARRAY[4][8] = 6421928
+ARRAY[4][9] = 6421932
+ARRAY[5][0] = 6421896
+ARRAY[5][1] = 6421900
+ARRAY[5][2] = 6421904
+ARRAY[5][3] = 6421908
+ARRAY[5][4] = 6421912
+ARRAY[5][5] = 6421916
+ARRAY[5][6] = 6421920
+ARRAY[5][7] = 6421924
+ARRAY[5][8] = 6421928
+ARRAY[5][9] = 6421932
+ARRAY[6][0] = 6421896
+ARRAY[6][1] = 6421900
+ARRAY[6][2] = 6421904
+ARRAY[6][3] = 6421908
+ARRAY[6][4] = 6421912
+ARRAY[6][5] = 6421916
+ARRAY[6][6] = 6421920
+ARRAY[6][7] = 6421924
+ARRAY[6][8] = 6421928
+ARRAY[6][9] = 6421932
+ARRAY[7][0] = 6421896
+ARRAY[7][1] = 6421900
+ARRAY[7][2] = 6421904
+ARRAY[7][3] = 6421908
+ARRAY[7][4] = 6421912
+ARRAY[7][5] = 6421916
+ARRAY[7][6] = 6421920
+ARRAY[7][7] = 6421924
+ARRAY[7][8] = 6421928
+ARRAY[7][9] = 6421932
+ARRAY[8][0] = 6421896
+ARRAY[8][1] = 6421900
+ARRAY[8][2] = 6421904
+ARRAY[8][3] = 6421908
+ARRAY[8][4] = 6421912
+ARRAY[8][5] = 6421916
+ARRAY[8][6] = 6421920
+ARRAY[8][7] = 6421924
+ARRAY[8][8] = 6421928
+ARRAY[8][9] = 6421932
+ARRAY[9][0] = 6421896
+ARRAY[9][1] = 6421900
+ARRAY[9][2] = 6421904
+ARRAY[9][3] = 6421908
+ARRAY[9][4] = 6421912
+ARRAY[9][5] = 6421916
+ARRAY[9][6] = 6421920
+ARRAY[9][7] = 6421924
+ARRAY[9][8] = 6421928
+ARRAY[9][9] = 6421932
+
+/*Nota-se que um inteiro em C e um numero de 4 byts, logo na matriz, os espacos sao alocados exatamente em sequencia de 4 em 4 byts.*/
+
+=======================================================================================================================================
+
+#include <stdio.h>
+
+int main()
+{
+    int array[5] = {21, 42, 53, 62, 53};
+    int i; 
+
+    for(i = 0; i < 5; i++)
+    {
+        printf("ENDERECO DE MEMORIA ARRAY[%d] = %p\n", i, &array[i]);
+
+    }
+
+    printf("\n\n");
+    
+    for(i = 0; i < 5; i++)
+    {
+        printf("ENDERECO DE MEMORIA ARRAY[%d] = %p\n", i, array[i]);
+
+    }
+
+
+    printf("\n\n");
+
+        printf("ENDERECO DE MEMORIA ARRAY = %p\n", array);
+
+
+    return 0; 
+}
+
+ENDERECO DE MEMORIA ARRAY[0] = 0061FF08   
+ENDERECO DE MEMORIA ARRAY[1] = 0061FF0C  << cada posicao não é um ponteiro, e sim espacos um atras do outro de acordo com o tamanho de byts do tipo de dado
+ENDERECO DE MEMORIA ARRAY[2] = 0061FF10     o ponteiro principal, é o proprio array na posicao 0 = 0061FF08   
+ENDERECO DE MEMORIA ARRAY[3] = 0061FF14
+ENDERECO DE MEMORIA ARRAY[4] = 0061FF18
+
+
+ENDERECO DE MEMORIA ARRAY[0] = 00000015      << nesse caso, é possivel ver que cada posição não é um ponteiro em ci, pois se fosse apareceria para onde ele aponta e nao o valor da posicao em hexadecimal
+ENDERECO DE MEMORIA ARRAY[1] = 0000002A         oque esta amostra ai, é simplesmente os valores das pocisoes em hexa, não esta mostrando enderecos 
+ENDERECO DE MEMORIA ARRAY[2] = 00000035
+ENDERECO DE MEMORIA ARRAY[3] = 0000003E
+ENDERECO DE MEMORIA ARRAY[4] = 00000035
+
+
+ENDERECO DE MEMORIA ARRAY = 0061FF08       <<<   Aqui vemos que se for pedido para mostrar um ponteiro %p e colocar a variavel array para ser apresentada, aparece o endereco principal
+                                                 e não epena o valor que esta nessa posicao em hexa, logo se voce pede um ponteiro, coloca em seguida a variavel sem o especificado "&" e essa varivel retorna um endereco           
+                                                sabemos que ela é uma variavel ponteiro. 
+
+=======================================================================================================================================
+=======================================================================================================================================
+
+Logo, para desenvolver melhor, temos que, quando criamos um array, a linguagem C cria um ponteiro que aponta para o primeiro espaco do array
+seria tipo: 
+
+int array[5];  // 0 1 2 3 4 
+                
+>> C CRIA :  int * p = &array
+
+Assim quando pedimos um 
+
+printf("%p", &array[0]);    = 0061FF14             TEMOS VALORES IGUAIS. 
+printf("%p", array)         = 0061FF14
+

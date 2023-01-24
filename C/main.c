@@ -1,14 +1,30 @@
-/* REVISANDO PONTEIROS */
 #include <stdio.h>
-#include "func.h"
 
 int main()
 {
+    int array[5] = {21, 42, 53, 62, 53};
+    int i; 
 
-    int numero = 23; 
-    emcremento(&numero); // emcremento recebe o espaco de numero;
-    printf("\n");
-    printf("O ENDERECO DE MEMORIA DE NUMERO E: %d", &numero );
+    for(i = 0; i < 5; i++)
+    {
+        printf("ENDERECO DE MEMORIA ARRAY[%d] = %p\n", i, &array[i]);
+
+    }
+
+    printf("\n\n");
+    
+    for(i = 0; i < 5; i++)
+    {
+        printf("ENDERECO DE MEMORIA ARRAY[%d] = %p\n", i, array[i]);
+
+    }
+
+
+    printf("\n\n");
+
+        printf("ENDERECO DE MEMORIA ARRAY = %p\n", array);
+
+
 
 
 

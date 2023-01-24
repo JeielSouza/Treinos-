@@ -1,0 +1,122 @@
+/* REVISANDO PONTEIROS 
+AULA TOTALMENTE ERRADA
+CORRECOES: 
+
+ELE NAO ESTA MOSTRANDO O ENDERECO DE MEMORIA DOS NUMEROS, E SIM ESTA FORMATANDO O VALOR DOS NUMEROS 
+PARA HEXADECIMAL, ELE FALA NO CURSO QUE ELE ESTA "MOSTRANDO OS ENDERECOS" E AINDA FALA QUE O COMPUTADOR ALOCA UM ATRAS DO OUTRO
+MANO?! O COMPUTADOR ALOCA CADA ELEMENTO DO ARRAY NO PROXIMO ESPACO APOS 32 BITS  (NO CASO DE INTEIROS QUE TEM 4 bytes DE COMPRIMENTO)
+*/
+#include <stdio.h>
+#include "func.h"
+
+int main()
+{
+    int valores[5] = {1, 2, 3, 4 ,5};
+    int i; 
+    int teste = 31;
+
+    for (i = 0; i < 5; i++)
+    {
+        printf("O valor %d tem %ld Bytes\n", valores[i], sizeof(valores[i]));
+    
+    }
+    printf("O array de valores possui %ld bytes\n ", sizeof(valores));
+
+    printf("valores[0] vale %d e endereco de memoria e %p\n",  valores[0], valores[0]); 
+    /*JEITO CERTO SERIA COLOCANDO "&" ANDES DA VARAIVEL, PARA QUE FOSSE INFORMADO O ENDERECO, POIS SE PEDIR PARA INFORMAR DIRETO ASSIM, VAI APENAS INFORMAR O VALOR DA VARIAVEL EM HEXADECIMAL E NÃO O ENDERESSO*/
+    /*O CODIGO* CERTO SRIA: printf("valores[0] vale %d e endereco de memoria e %p\n",  valores[0], &valores[0]); */
+
+    printf("valores[0] vale %d e endereco de memoria e %p\n",  *(valores), *(valores));
+     /*AQUI DA MESMA FORMA, A PRIMEIRA PARTE ESTA CERTA, BASTA "*" PARA INFORMAR O VALOR DE UMA VARIAVEL, AGORA A SEGUNDA PARTE, PRECISA DA POHA DO "&" PARA INFORMAR O ESPAÇO
+     O JEITO CERTO SERIA: printf("valores[0] vale %d e endereco de memoria e %p\n",  *(valores), *(valores));*/
+
+
+    printf("%p", teste);
+
+
+    return 0; 
+}
+================================== FAZENDO DO JEITO DELE, MAS COM UM ARRAY DE NUMERO ALEATORIOS PARA PROVAR O ERRO ===============
+
+/* REVISANDO PONTEIROS 
+AULA TOTALMENTE ERRADA
+CORRECOES: 
+
+ELE NAO ESTA MOSTRANDO O ENDERECO DE MEMORIA DOS NUMEROS, E SIM ESTA FORMATANDO O VALOR DOS NUMEROS 
+PARA HEXADECIMAL, ELE FALA NO CURSO QUE ELE ESTA "MOSTRANDO OS ENDERECOS" E AINDA FALA QUE O COMPUTADOR ALOCA UM ATRAS DO OUTRO
+MANO?! O COMPUTADOR ALOCA CADA ELEMENTO DO ARRAY NO PROXIMO ESPACO APOS 32 BITS  (NO CASO DE INTEIROS QUE TEM 4 bytes DE COMPRIMENTO)
+*/
+#include <stdio.h>
+#include "func.h"
+
+int main()
+{
+    int valores[5] = {13, 31, 51, 12 ,56};
+    int i; 
+    int teste = 31;
+
+    for (i = 0; i < 5; i++)
+    {
+        printf("O valor %d tem %ld Bytes\n", valores[i], sizeof(valores[i]));
+    
+    }
+    printf("O array de valores possui %ld bytes\n ", sizeof(valores));
+
+    printf("valores[0] vale %d e endereco de memoria e %p\n",  valores[0], valores[0]); 
+
+    printf("valores[0] vale %d e endereco de memoria e %p\n",  *(valores), *(valores));      // vale 13 e o endereco é 13? KKKKKKKKKKKKKKKKKKKKKKKK
+    printf("valores[0] vale %d e endereco de memoria e %p\n",  *(valores+1 ), *(valores+1));   // vale 31 e o endereco é 31? KKKKKKKKKKKKKKKKKKKKKKKK
+    printf("valores[0] vale %d e endereco de memoria e %p\n",  *(valores+2), *(valores+2));
+    printf("valores[0] vale %d e endereco de memoria e %p\n",  *(valores+3), *(valores+3));
+      printf("valores[0] vale %d e endereco de memoria e %p\n",  *(valores+4), *(valores+4));
+
+--- CONSOLE: 
+O valor 13 tem 4 Bytes
+O valor 31 tem 4 Bytes
+O valor 51 tem 4 Bytes
+O valor 12 tem 4 Bytes
+O valor 56 tem 4 Bytes
+O array de valores possui 20 bytes
+ valores[0] vale 13 e endereco de memoria e 0000000D
+valores[0] vale 13 e endereco de memoria e 0000000D 
+valores[0] vale 31 e endereco de memoria e 0000001F 
+valores[0] vale 51 e endereco de memoria e 00000033 
+valores[0] vale 12 e endereco de memoria e 0000000C 
+valores[0] vale 56 e endereco de memoria e 00000038 
+0000001F
+
+
+
+    printf("%p", teste);
+
+
+    return 0; 
+}
+
+====================================================================================
+MAIS ENTENDIMENTOS: 
+
+#include <stdio.h>
+
+int main()
+{
+    int n; 
+    int* p; 
+    
+    printf("DIGITE UM NUMER: ");
+    scanf("%d", &n);
+
+    p = &n;
+
+    printf("O ENDERECO DE MEMORIA DO PONTEIRO: %p\n", &p);  
+    printf("O ENDERECO DE MEMORIA ORIGINAL DE N: %p\n", &n);  
+    printf("P APONTA PARA : %p\n", p);
+
+    /*eu posso invocar ponteiros tanto com %d quanto com %p*/
+
+
+    
+
+
+    return 0; 
+}
