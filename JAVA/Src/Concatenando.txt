@@ -1,0 +1,85 @@
+
+public class One
+{
+    public static void main(String[] args)
+    {
+        double x = 33.512; 
+        System.out.println("VALOR = "+ x +" METROS");  //  forma de concatenar valores em PRINTLN e PRINT. 
+        System.out.print("CORRETO ?");
+        System.out.printf("VALOR = %.2f METROS %n", x); // concatenando com PRINTF (merma coisa de C)
+ 
+    }
+}
+
+---- ALGUNS FORMATADORES / MARCADORES -----
+%f = flutuantes
+%n = quebra de linha
+%s = Strings > textos
+%d = inteiros 
+
+Testando: 
+
+public class One
+{
+    public static void main(String[] args)
+    {
+        String nome = "Maria";
+        int idade = 31; 
+        double renda = 4000.0; 
+        System.out.printf(" NOME: %s %n IDADE: %d %n RENDA: %.2f", nome, idade, renda);
+    }
+
+}
+
+-------------------- EXEMPLO MAIS VARIADO -----------------------------------
+
+public class One
+{
+    public static void main(String[] args)
+    {
+        String produto = "Computador";
+        String produto2 = "Mesa Escritorio";
+        int age = 30;
+        int cod = 5290; 
+        char sex = 'F'; 
+
+        double size = 53.234567;
+        double price = 2100.00;
+        double price2 = 650.50;
+        
+        System.out.printf("PRODUTOS: %n");
+        System.out.printf("1 - %s %n PRECO $ %.2f %n", produto, price);
+        System.out.printf("2 - %s %n PRECO $ %.2f %n", produto2, price2);
+        
+        
+        System.out.printf("%n");
+
+        System.out.println("CLIENTE: ");
+        System.out.println("IDADE: " + age);
+        System.out.println("COD: " + cod);
+        System.out.println("GENERO: " + sex);
+
+        System.out.printf("%n");
+
+        System.out.printf("TAMANHO DA MESA COM OITO DECIMAIS: %.8f %n COM TRES DECIMAIS: %.3f", size, size);
+
+
+
+    }
+}
+
+PRODUTOS: 
+1 - Computador
+ PRECO $ 2100.00
+2 - Mesa Escritorio
+ PRECO $ 650.50
+
+CLIENTE:
+IDADE: 30
+COD: 5290
+GENERO: F
+
+TAMANHO DA MESA COM OITO DECIMAIS: 53.23456700 
+ COM TRES DECIMAIS: 53.235
+
+ --------------------------

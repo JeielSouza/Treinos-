@@ -1,0 +1,76 @@
+public class One 
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Teste sei la!");  // Printa com uma quabra de linha
+        System.out.print("Segunda frase!"); // Printa sem a quebra de linha 
+    }
+}
+
+------------------ PRINTANDO UM VALOR E DECLARANDO VARIAVEIS  -----------
+
+public class One 
+{
+    public static void main(String[] args)
+    {
+
+       int numero = 3; 
+       byte num = 3; 
+
+
+        System.out.println("Teste sei la!"); 
+        System.out.println("Segunda frase!");
+        System.out.println(numero);
+        System.out.println(num);
+        
+    }
+}
+
+
+------------------ PRINTANDO UM VALOR FLUTUANTE  -----------
+
+
+public class One
+{
+    public static void main(String[] args)
+    {
+        double flutu =  131.3141; 
+        System.out.printf("%.2f%n",flutu);   // %n = quebra linha
+        System.out.printf("%.4f%n", flutu);   // printf é para imprimir valores formatados como no C. 
+
+    }
+}
+
+ou  
+  
+        double flu = 314.5125;
+        double fruts = 312.412; 
+
+        System.out.printf("%.2f%n", flu );
+        System.out.printf("%.1f%n", fruts);
+
+----------------------------- COMPUTADOR DE LINGUA DIFERENTE DE US ------------------------------------
+        
+        /*Lembrando que pode printar a variavel flutuante completa, caso não va fazer formatacao, com o println ou print
+        1- O printf segue a risca, a lignuagem que o computador foi configurada, ou seja, se pedir para imprimir um numero
+        com ponto flutuante em um PC de lingua portuguesa, o numero vai usar virgulas para separar a casa decimal 
+        Importar classes do JDK, é como importar bibliotecas em C. 
+        Visando evitar isso use: 
+
+import java.util.Locale;  // Vai importar essa classe da JDK, para poder ser usada no progama. 
+public class One
+{
+    public static void main(String[] args)
+    {
+        Locale.setDefault(Locale.US);   // Vai configurar o progama para linguagem US (americana)
+        double flutu =  131.3141; 
+        System.out.printf("%.2f%n",flutu);   
+        System.out.printf("%.4f%n", flutu);   
+
+
+
+    }
+}
+
+        
+        */
