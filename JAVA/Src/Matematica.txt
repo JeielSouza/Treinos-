@@ -60,3 +60,10 @@ public class One
     }
 }
 
+/*ESSE É UM EXEMPLO USANDO ALGUMAS DAS FUNCOES MATEMATICAS DISPONIVEIS PARA java*/
+
+A = Math.pow(x, y) = A recebe X elevado a Y 
+A = Math.sqrt(x);  = A recebe a raiz quadrada de X 
+A = Math.abs(x); = A recebe o valor absoluto de x
+
+Entre outros, é so pesquisar.

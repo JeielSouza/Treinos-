@@ -1,0 +1,166 @@
+import java.util.Scanner;             // classe do JDK para trabalhar com entrada de dados
+import java.util.Locale;             // caso a maquina seja brasileira >> SEMPRE E! se tu ta no brasil 
+
+public class One 
+{
+    public static void main(String[] args)
+    {
+        Locale.setDefault(Locale.US);                      // Sinalizando para usar o locale Americano
+        Scanner sc = new Scanner(System.in);              // Criando o objeto scanner 
+
+        String x;
+        x = sc.next();                                // sinalizando que o que for digitado a seguir vai ser armazenada nessa variavel. 
+
+        System.out.println("VOCE DIGITOU: " + x);
+
+        sc.close();                    // termina ou mata o objeto scanner criado. 
+ 
+    }
+}
+
+------------------ TIPOS DE LEITURAS -------------
+A variavel a ser lida pode receber: 
+
+ sc.next();  < Le Strings 
+ sc.nextInt(); < Le inteiros 
+ sc.nextDouble(); < Numero com ponto flutuante (ele pega a localidade do sistema )
+ sc.next().charAt(0); < Le Caracteres 
+
+
+
+
+    PROBLEMA DECIMAIS! 
+/*PODE dar um problema ao fazer entrada de numeros flutuantes, dependendo do idioma da maquina que a pessoa esta usando 
+porque por exemplo, ela pode digitar um numero com ponto, sendo que a maquina esta em portugues, nesse caso
+daria erro, porque o progama java esta esperando que o separador decimal serja uma virgula. etc.
+Visando resolver isso, use sempre oo Locale, para definir padrao americano.  */
+
+
+------------------- UM MODELO BASICO ---------------
+
+import java.util.Locale;
+import java.util.Scanner; 
+
+public class One
+{
+    public static void main(String[] args)
+    {
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+
+        char x;  
+        x = sc.next().charAt(0);      // SINALIZA que ele vai pegar o primeiro caractere de qualquer string digitada. 
+        System.out.println("O CARACTERE QUE VOCE DIGITOU FOI: " + x);
+
+
+        sc.close();
+    }
+}
+
+-------------------- LENDO VARIOS DADOS EM UMA UNICA LINHA -----------------------
+
+import java.util.Locale;
+import java.util.Scanner; 
+
+public class One
+{
+    public static void main(String[] args)
+    {
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+
+        char x; 
+        double y = 0f;
+        int z = 0;
+        String N; 
+
+        x = sc.next().charAt(0);
+        y = sc.nextDouble();
+        z = sc.nextInt();
+        N = sc.next();
+
+        sc.close();
+    }
+}
+
+
+---------------- UM OUTRO MODELO ----------------
+
+import java.util.Locale; 
+import java.util.Scanner; 
+
+public class One 
+{
+
+    public static void main(String[] args)
+    {
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+
+        char x; 
+        String z; 
+        int s = 0;
+        double t = 0f;
+ 
+        x = sc.next().charAt(0);
+        z = sc.next();
+        s = sc.nextInt();
+        t = sc.nextDouble();
+
+        System.out.printf("CARACTERE: %c %n", x);
+        System.out.printf("STRING: %s %n", z );
+        System.out.printf("INTEIRO: %d %n", s );
+        System.out.printf("FLUTUANTE: %.2f ", t);
+        
+
+        sc.close();
+
+    }
+}
+
+--------------- LENDO TEXTO ATE A QUEBRA DE LINHA -----------------
+
+import java.util.Locale;
+import java.util.Scanner; 
+
+public class One
+{
+    public static void main(String[] args)
+    {
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+
+        int x; 
+        String s1,s2,s3; 
+
+        x = sc.nextInt();
+        s1 = sc.nextLine();
+        s2 = sc.nextLine();
+        s3 = sc.nextLine();
+
+        System.out.println("INTERIO: " + x);
+        System.out.println("TEXTO 1: " + s1);
+        System.out.println("TEXTO 2: " + s2);
+        System.out.println("TEXTO 3: " + s3);
+        
+
+        sc.close();
+    }
+}
+
+INTERIO: 2    
+TEXTO 1: Jeiel
+TEXTO 2: souza
+TEXTO 3: Lia           << DARIA UM PROBLEMA, E O nextLine consumiria a quebra de linha apos o inteiro, a solucao é limpar o bUFFER de entrada.
+
+
+        x = sc.nextInt();
+        sc.nextLine();
+        s1 = sc.nextLine();     << Dessa forma! Funciona corretamente 
+        s2 = sc.nextLine();       Do contrario, o progama iria usar o espaço como quebra de linha e ia armazenas a palavra apos o espaço na outra string 
+        s3 = sc.nextLine();
+
+INTERIO: 4
+TEXTO 1: jeiel souza
+TEXTO 2: romulo bar 
+TEXTO 3: dad fa      << FUNCIONA! 
