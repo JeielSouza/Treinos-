@@ -1,0 +1,55 @@
+public class One 
+{
+    public static void main(String[] args)
+    {
+        int base_maior = 8; 
+        int base_menor = 6; 
+        int altura = 5;
+        double area = 0; 
+        area = (base_menor + base_maior) / 2 * altura;
+
+        System.out.printf("AREA = %.2f", area);
+
+    }
+}
+
+// Java tem varios operadores de atribuicao, geralmente iguais aos de C. 
+// e interessante colocar 0.0 ou 0f (.0 ou f) em variaveis float que tem inicalmente numeros unitarios. 
+
+------------------------------ EM CASO DE NUMEROS INTEIROS QUE VAO COMPOR UM RESULTADO REAL --------------------
+
+public class One 
+{
+    public static void main(String[] args)
+    {
+        int y = 5; 
+        int x = 2; 
+        double resultado = 0f; 
+        resultado = (double)x / y       // se não fizer isso. o compilador entender que queros o resultado inteiros dessa divisao entre inteiros. 
+        area = (base_menor + base_maior) / 2 * altura;
+
+        System.out.printf("AREA = %.2f", area);
+
+    }
+}
+
+2.5 < 
+
+-------------------------- FAZENDO UMA VARAIVEL RECEBER OUTRO VALOR NAO ORIGINAL DELA-----------------------
+
+public class One 
+{
+    public static void main(String[] args)
+    {
+         int x = 0; 
+         double y = 4.5;
+
+         x = (int)y;  
+
+         System.out.println(y);
+    }
+}
+
+SAIDA : 4
+
+// e perigoso, não faça isso, mas saiba que é possivel fazer.
