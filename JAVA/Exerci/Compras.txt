@@ -1,0 +1,60 @@
+package test;
+import java.util.Scanner; 
+import java.util.Locale;
+
+public class One
+{
+	public static void main(String[] args)
+	{
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		int cod_one; 
+		int qtd_one;
+
+		int cod_two;
+		int qtd_two; 
+
+		double unit_value_one;
+		double unit_value_two; 
+
+		double total_1;
+		double total_2; 
+		
+		double valor_compra; 
+
+		System.out.println("CODIGO DO PRODUTO: ");    // produto 1 
+		cod_one = sc.nextInt();
+
+		System.out.println("QUANTIDADE DO PRODUTO: ");
+		qtd_one = sc.nextInt();
+
+		System.out.println("VALOR UNITARIO: ");
+		unit_value_one = sc.nextDouble();
+
+		System.out.printf("%n %n");
+
+		System.out.println("CODIGO DO PRODUTO: ");    // produto 2
+		cod_two = sc.nextInt();
+
+		System.out.println("QUANTIDADE DO PRODUTO: ");
+		qtd_two = sc.nextInt();
+
+		System.out.println("VALOR UNITARIO: ");
+		unit_value_two = sc.nextDouble();
+
+		System.out.printf("%n %n");
+
+		total_1 = qtd_one * unit_value_one;
+		total_2 = qtd_two * unit_value_two;
+		valor_compra = total_1 + total_2; 
+
+		System.out.printf("VALOR DA COMPRA: R$ %.2f", valor_compra);
+
+
+		
+
+		sc.close();
+
+	}
+}

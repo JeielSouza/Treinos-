@@ -1,0 +1,28 @@
+package test; 
+import java.util.Scanner; 
+import java.util.Locale; 
+
+public class One
+{
+	public static void main(String[] args)
+
+	{
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		double Pi = 3.14159; 
+		double Area = 0f;
+		double Raio = 0f;
+
+		System.out.println("DIGITE O VALOR DO RAIO: ");
+		Raio = sc.nextDouble();
+
+		Area = Pi * (2*Raio);
+
+		System.out.printf("A AREA E: %.4f", Area);
+
+		sc.close();
+
+	}
+
+}

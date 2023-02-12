@@ -1,0 +1,33 @@
+package test; 
+import java.util.Scanner; 
+import java.util.Locale; 
+
+public class One
+{
+	public static void main(String[] Args)
+	{
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		int codigo; 
+		double horas; 
+		double horas_value;
+		double salario; 
+		
+		System.out.println("Numero do funcionario: ");
+		codigo = sc.nextInt();
+		System.out.println("Horas trabalhadas: ");
+		horas = sc.nextDouble();
+		System.out.println("Valor da hora desse funcionario: ");
+		horas_value = sc.nextDouble();
+		
+		salario = horas * horas_value; 
+
+		System.out.printf("CODIGO DO FUNCIONARIO: %d %n SALARIO: R$ %.2f", codigo, salario);
+
+		sc.close();
+
+
+
+	}
+}

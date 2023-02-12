@@ -1,0 +1,30 @@
+package test;
+import java.util.Scanner;
+import java.util.Locale;
+
+public class One
+{
+	public static void main(String[] args)
+	{
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int num_um;
+		int num_dois;
+		int resultado; 
+		
+		System.out.println("DIGITE O PRIMEIRO NUMERO: ");
+		num_um = sc.nextInt();
+		System.out.println("DIGITE O SEGUNDO NUMERO: ");
+		num_dois = sc.nextInt();
+
+		resultado = num_um + num_dois; 
+
+		System.out.printf("SOMA DOS NUMERO E: %d", resultado); 
+
+
+
+
+		sc.close();
+	}
+}

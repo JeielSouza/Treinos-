@@ -1,7 +1,0 @@
-javac nome.java     
-
-<CRIA UM ARQUIVO CLASS>
-
-java nome 
-
-> o nome do plublic class, precisa ser o mesmo do arquivo !

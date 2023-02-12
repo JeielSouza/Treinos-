@@ -1,0 +1,37 @@
+package test; 
+import java.util.Locale; 
+import java.util.Scanner; 
+
+public class One 
+{
+	public static void main(String[] args)
+	{
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		int  a;
+		int b;
+		int c;
+		int d;
+		int Diferenca; 
+
+		System.out.println("VALOR DE A: ");
+		a = sc.nextInt();
+		System.out.println("VALOR DE B: ");
+		b = sc.nextInt();
+		System.out.println("VALOR DE C: ");
+		c = sc.nextInt();
+		System.out.println("VALOR DE D: ");
+		d  = sc.nextInt();
+
+		Diferenca= (a*b) - (c * d);
+
+		System.out.printf("DIFERECA: %d", Diferenca);
+
+
+
+
+
+		sc.close();
+	}
+}
