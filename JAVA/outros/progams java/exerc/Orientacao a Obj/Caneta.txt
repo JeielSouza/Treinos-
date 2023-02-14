@@ -1,0 +1,126 @@
+PRINCIPAL ============================================
+=======================================================
+
+package Aula02;
+
+public class Aula02 {
+	public static void main(String[] args)
+
+		{
+		
+			Caneta c1 = new Caneta();
+			c1.cor = "vermelho";
+			c1.ponta = 0.5f;
+			c1.tampada = false; 
+			c1.modelo = "Bic";
+			c1.carga = 80; 
+			
+			c1.tampar(); 
+			/*Ao puxar esse metodo o status da caneta se altera para tampada = true
+			 * logo se eu puxar o metodo rabiscar() vai da erro, pois a caneta esta tampada*/
+			
+			c1.destampar(); 
+			/*Chamando o metodo destampar, automaticamente a tributo tampado se altera para False
+			 * logo a caneta esta destampada, e pode rasbiscar tranquilamente*/
+		
+			c1.rabiscar();
+			c1.status();
+			
+			Caneta c2 = new Caneta();  // posso criar varios objetos com a mesma forma!
+			
+			c2.carga = 13; 
+			c2.cor = "Azul";
+			c2.tampada = true; 
+			c2.ponta = 1.5f;
+			c2.modelo = "Castel";
+			
+			System.out.printf("%n");
+			
+			c2.status();
+			c2.rabiscar();
+			
+			
+			
+		}
+
+}
+
+c o n s o l e: 
+
+ESTA RISCANDO . . . 
+Cor: vermelho
+Modeo: Bic
+Ponta: 0.5
+Carga: 80 
+Tampada: false
+
+Cor: Azul
+Modeo: Castel
+Ponta: 1.5
+Carga: 13 
+Tampada: true
+!! ERRO !! TIRE A TAMPA!
+
+
+
+
+
+
+CLASSE CANETA ============================================
+=======================================================
+
+
+package Aula02;
+
+public class Caneta {
+	
+	    String modelo;
+	    String cor; 
+	    double ponta; 
+	    int carga; 
+	    boolean tampada; 
+
+	    void rabiscar()
+	    {
+	    	if(this.tampada == true)
+	    	{
+	    		System.out.println("!! ERRO !! TIRE A TAMPA!");
+	    	}
+	    	else 
+	    	{
+	    		System.out.println("ESTA RISCANDO . . . ");
+	    	}
+ 
+	    }
+
+	    void tampar()
+	    {
+	    	this.tampada = true; 
+	    	
+
+	    }
+
+	    void destampar()
+	    {
+
+	    		this.tampada = false; 
+	    		
+
+	    }
+
+	    
+	    void status()
+	    {
+	    	System.out.println("Cor: " + this.cor);
+	    	System.out.println("Modeo: " + this.modelo);
+	    	System.out.println("Ponta: " + this.ponta);
+	    	System.out.printf("Carga: %d %n", this.carga);
+	    	System.out.println("Tampada: " + this.tampada);
+	    	
+	    }
+		
+
+}
+
+/*This e o nome do obejto que foi chamado, o objeto vai sempre substituir o This no codigo
+ * original */
