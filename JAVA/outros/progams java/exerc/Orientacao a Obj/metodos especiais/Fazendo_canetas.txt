@@ -1,0 +1,85 @@
+PRINCIPAL ============================================
+=======================================================
+
+package Aula02;
+import java.util.Scanner;
+import java.util.Locale; 
+
+public class Principal
+{
+	
+	public static void main(String[] args)
+	{
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		Caneta c1 = new Caneta();  // criando a caneta
+		
+		String model;   // variaveis que vao alterar os atribuitos
+		double pont;   
+		
+		System.out.println("MODELO DA CANETA: ");  // lendo as variaveis 
+		model = sc.next();                              // next = string unica nextLine = string espacada
+		System.out.println("PONTA DA CANETA: ");
+		pont = sc.nextDouble();
+		
+		c1.setModelo(model);  // passo como parametro oque digitei em model para o setModelo 
+		c1.setPonta(pont);   // passo como parametro oque digitei em pont para o setPonta
+		c1.status();         // chamo os status de print que puxam os gets que retornam os valores dos atributos
+		
+		
+	
+		
+		
+			
+		
+		sc.close();
+	}
+}
+
+
+CLASSE CANETA ============================================
+=======================================================
+package Aula02; 
+
+public class Caneta
+{
+	
+	public String modelo;
+	private double ponta; 
+	
+	public String getModelo()
+	{
+		return this.modelo;
+	}
+	
+	public void setModelo(String m)
+	{
+		
+		this.modelo = m; 
+		
+	}
+	
+	
+	public double getPonta()
+	{
+		
+		return this.ponta;
+	}
+	
+	
+	public void setPonta(double p)
+	{
+		
+		this.ponta = p; 
+		
+	}
+	
+	public void status()
+	{
+		System.out.println("MODELO: " + this.getModelo());
+		System.out.println("PONTA: " + this.getPonta());
+	}
+}
+

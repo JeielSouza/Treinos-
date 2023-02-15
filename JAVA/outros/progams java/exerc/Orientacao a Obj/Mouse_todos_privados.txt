@@ -1,0 +1,114 @@
+PRINCIPAL ============================================
+=======================================================
+
+package Aula02;
+import java.util.Scanner; 
+import java.util.Locale; 
+
+public class Principal
+{
+	public static void main(String[] args)
+	{
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int b;      // numero de botoes 
+		String m;   // modelo
+		double pes; // peso 
+		
+		
+		System.out.println("DIGITE QUANTOS BOTES O MOUSE TEM: ");
+		b = sc.nextInt();
+		System.out.println("DIGITE O NOME DO MODELO: ");
+		m = sc.next();       // as vezes eh nextLine() as vezes e so next .
+		System.out.println("DIGITE O PESO: ");
+		pes = sc.nextDouble();
+		
+		
+		
+		Mouse m1 = new Mouse();
+		
+		m1.setPeso(pes);
+		m1.setModelo(m);
+		m1.setBotoes(b);
+		m1.ligar();
+	
+		
+		m1.getStatus();
+		
+		
+		
+		
+		sc.close();
+		
+	}
+}
+
+
+
+
+
+CLASSE MOUSE ============================================
+=======================================================
+
+
+package Aula02;
+
+
+public class Mouse
+{
+	
+	
+	// privates, protected, public 
+	
+	private int botoes;
+	private String modelo;
+	private double peso; 
+	private boolean ligado; 
+	
+	
+	public void setModelo(String z)
+	{
+		modelo = z; 
+	}
+	
+	public void setPeso(double pe)
+	{
+		peso = pe; 
+	}
+	
+	
+	public void ligar()
+	{
+		ligado = true; 
+		
+	}
+	
+	public void desligar()
+	{
+		ligado = false; 
+	}
+	
+	
+	public void getStatus()
+	{
+		System.out.println("NUMERO BOTOES: " + this.botoes);
+		System.out.println("MODELO: " + this.modelo);
+		System.out.printf("PESO: %.2f %n", this.peso);
+		
+		if (ligado == true)
+		{
+			System.out.println("O MOUSE ESTA LIGADO! ");
+		}
+		else 
+		{
+			System.out.println("O MOUSE ESTA DESLIGADO! ");
+		}
+	}
+	
+	
+	public void setBotoes(int m)
+	{
+		botoes = m; 
+	}
+}
