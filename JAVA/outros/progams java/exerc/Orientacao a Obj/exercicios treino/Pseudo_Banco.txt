@@ -1,0 +1,234 @@
+================ P R I N C I P A L 
+=======================================
+
+/*
+ * O COD do cliente, é gerado aleatoriamente. de 0 a 21. o codigo dele, nesse exercicio vai se ligado ao espaco que ele se encontra 
+ * no array. 
+ * 2 - PROTEGER DE GERAR NUMEROS IGUAIS. 
+ * */
+package Operacional; 
+import java.util.Scanner; 
+import java.util.Locale; 
+import java.util.Random; 
+
+
+public class Principal 
+{
+	public static void main(String[] args)
+	{
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);  // classe scanner instanciada
+		Random rand = new Random();    // classe ramdom isntaciada
+		Corrente c1 = new Corrente();  // classe bancaria instaciada 
+		
+		double saldo;          // saldo da conta
+		int resposta;        // numeros que guiam o menu
+		int tipoConta;         //  numero que sera feita a operacao para definir o tipo da conta. 1 ou 2.
+		String nome;       // nome dono da conta
+		int cod;         // codigo da conta 
+		int upperbound = 20;  // intervalos de numeros aleatorios. 
+		int random;  // armazena o tal numero aleatorio de 1 a 20 
+		
+
+		
+		System.out.println("OPCOES: ");
+		System.out.println("");
+		System.out.println("1 - SACAR");
+		System.out.println("2 - DEPOSITAR ");
+		System.out.println("3 - ABRIR NOVA CONTA ");
+		System.out.println("4 - FECHAR CONTA");
+		System.out.println("5 - TABELA DE CLIENTES");
+		
+		
+		resposta = sc.nextInt();
+		
+		if (resposta == 1 )
+		{
+			
+		}
+		else if (resposta == 2)
+		{
+			
+		}
+		else if (resposta == 3)
+		
+		{
+			                                                // nome, tipo(int), codigo, saldo 
+					System.out.println();
+					System.out.println("DIGITE O NOME DO NOVO CLIENTE: ");
+					nome = sc.next();                                                 // tentar primeiro so com o primeiro nome, dps tenta com o nextLine 
+					System.out.println("QUAL O TIPOS DA CONTA? ");
+					System.out.println("1 - CORRENTE");
+					System.out.println("2 - POUPANCA "); 
+					tipoConta  = sc.nextInt();
+					System.out.println("SALDO INICIAL DO CLIENTE: ");
+					saldo  = sc.nextDouble();
+					
+					
+					
+					random = rand.nextInt(upperbound);
+					cod = random; 
+					System.out.println(cod);                  //colocar, algo que impeca de gerar o mesmo numero (um looping talvez)
+
+					System.out.println("DIGITE O CODIGO: ");
+					resposta = sc.nextInt();
+					
+					c1.status(resposta);
+					
+						
+				
+					
+			
+		}
+		
+		else if (resposta == 4)
+		{
+			
+		}
+		
+				
+	
+
+		sc.close();
+		
+	}
+	
+}
+
+========================================= C L A S S E : BANCO ou COrrente.
+==============================================================================
+
+/*
+ * 1 - linka posicoes com codigos
+ * 2 - linkar elementos com o codigo 
+ * 3 - fazer um metodo para verificar as informacoes
+ * 4 - fazer um metodo para retornar ao menu principal
+ * 5 - fazer o metodo de status
+ * 6 - fazer as funcionalidades de deposito e saque. 
+ * 7 - fazer metodo que retorno a lista de codigos e o nome dos clientes.
+ * 
+ *   
+ *   SISTEMA ABANDONADO. NAO SEI QUE MERDA TO FAZENDO E SIMPLISMENTE ESTA CONPLEXO PRA QUEM N SABE NADA DE JAVA AINDA
+ *   
+ *   CONSISTIA EM: FAZER UM BANCO DE DADOS DA XUXA, QUE LINKAVA O CODIGO PRINCIPAL A POSICAO DOS ELEMENTOS DENTRO DA MATRIZ
+ *   OBVIAMENTE EU ESTOU COMETENDO DEZENAS DE ERROS QUE DE SINTAXE OU TECNICAS, ENTAO OPTEI POR PARA E SO VOLTAR DEPOIS QUE TERMINAR O CURSO
+ *   A IDEIA FOI PROMISSORA, MAS FALTA MUITA INFORMACAO AINDA 
+ *   
+ *   O ULTIMO ERRO DADO FOI UM NULLPOINT EM  >> this.dono no qual o progama insiste em dizer que esta nulo 
+ *   
+ *   APRENDER A FAZER PEQUENOS TESTES COM PEQUENAS COISAS ANTES DE SAIR DIGITANDO O CARALHO DE UM ALGORITMO INTEIRO BASEADO EM UMA HIPOTESE QUE EU ACHO QUE FUNCIONE
+ *   SABER DIVIDIR OS PROBLEMAS EM PEQUENAS PARTES E TESTES PARA DEPOIS IMPLEMENTAR NO TOTAL. 
+ */
+
+package Operacional;
+
+public class Corrente 
+{
+	
+
+	
+	private int numConta[]; // codigo da conta    set(I) get(I)
+	private String tipo[];    // tipo da conta                   // set(i) get(i)
+	private String dono[];    // nome do dono da conta   //  set(i) get(i)
+	private double saldo[];   // saldo do dono                  //   set(i) get(i)
+	private boolean status;               
+	   
+	                                                             // fazer um metodo que retorna a lista de cliente ligada a seus nomes
+	                                                            // ja que o espaco no array é igual ao codigo do cliente.
+	
+	public void AbrirConta(String nome, int tipo, int codigo, double saldo) // 1 = nome  2 = tipo  3 =  codigo e posicoes 4 = saldo                 tipo e um  int  q faz a operacao if e else
+	{
+		setDono(codigo, nome);           // NOME DONO DA CONTA
+		
+				if (tipo == 1)          // TIPO DA CONTA
+					{
+						setTipo(codigo, "CORRENTE");
+					}
+				else if (tipo == 2)
+					{
+						setTipo(codigo, "POUPANCA");
+					}
+				
+				
+		setNumConta(codigo, codigo);	 // CODIGO DA CONTA
+		setSaldo(codigo, saldo);
+		
+		/*E ESPERADO QUE COM ISSO ACONTECA A NATURAL ASSOCIACAO DO CODIGO COM A POSICAO QUE SE ENCONTRA CADA USUARIO*/
+		
+		
+	}
+	
+	// ======================= NUMERO CONTA E CODIGO =============
+	
+	public void setNumConta(int c, int b)    
+	{ 
+		
+		this.numConta[c] = b;
+			
+	}
+	
+	
+	public int getNumConta(int c)     // SO PODE retornar se for informado o codigo da conta. 
+	{                                  // Fazer um looping que vai exibir todos os nomes e codigo no array, e combinar nome com numero; 
+		return this.numConta[c];          // O tipo tabem precisa estar interligado com os espacos e conta                                         TODOS OS gets precisam do codigo para fazer o retorno doque exite naquela posicao 
+	}
+	
+	
+	public void setTipo(int c, String b)                           // Tipo conta -----------------------------------------------------------
+	{
+		this.tipo[c] = b; 
+	}
+
+	public String getTipo(int c)
+	{
+		return this.tipo[c]; 
+	}
+	  // ---------------------------------------------------------------------------
+	
+		
+	public String getDono(int c)            // ------------------------- DONO 
+	{
+		return this.dono[c]; 
+	}
+	
+	public void setDono(int c, String b)
+	{
+		this.dono[c] = b; 
+	}
+	
+	  // ---------------------------------------------------------------------------
+	                                              // saldo da conta.
+	public double getSaldo(int c)
+	{
+		return this.saldo[c]; 
+	}
+	
+	
+	public void setSaldo(int c, double b)
+	{
+		
+		this.saldo[c] = b; 
+	}
+	
+	
+	public void status(int codigo)      	// STATUS:  ler e passar como parametro o codito do cliente 
+	{
+		System.out.println("NOME CLIENTE: " + this.getDono(codigo));
+		System.out.println("TIPO DA CONTA: " + this.getTipo(codigo));
+		System.out.println("CODIGO DO CLIENT: " + this.getNumConta(codigo));
+		System.out.printf("SALDO DO CLIENTE: R$ %.2f %n", this.getSaldo(codigo));
+	}
+	
+	
+	// =================== LISTA DE CLIENTES ============ 
+	public void clientes()
+	{
+		for (int i = 0; i < 20 ; i++)
+		{
+			System.out.printf("CLIENTE: %s %n CODIGO: %d %n" + this.getDono(i), this.getNumConta(i));           // fazer uma opcao que mostra as tabelas no meu principal. 
+		}
+	}
+	
+	//----------------
+	
+}

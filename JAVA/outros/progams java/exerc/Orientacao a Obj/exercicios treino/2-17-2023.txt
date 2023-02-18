@@ -1,0 +1,132 @@
+
+------------------------------------------ P R I N C I P A L/
+========================================================
+========================================================
+
+
+package Aula02;
+
+import java.util.Scanner;
+import java.util.Locale;
+
+
+public class Principal
+{
+	public static void main(String[] args)
+	{
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		Caneta c1 = new Caneta("Azul", 0.2, "Bic", true);
+		
+		
+		c1.setModelo("Faber Castel");
+		c1.setTampada(false);
+		
+		c1.Status();
+		
+		
+		
+		sc.close();
+		
+		
+	}
+}
+
+
+------------------------------------------ C L A S S E /
+========================================================
+========================================================
+
+
+
+package Aula02;
+
+public class Caneta 
+{									// atributos 
+	private String cor;            // public and protected 
+	private double ponta; 
+	private String modelo; 
+	private boolean tampada; 
+									// CONSTRUTOR public nome ;;
+	
+	
+	public Caneta(String a, double p, String c, boolean t)
+	{
+		
+		setCor(a);
+		setPonta(p);
+		setModelo(c);
+		setTampada(t);
+		
+		
+	}
+	
+	
+								//metodos setters e getters 
+	
+	
+	public String getCor()              // cor 
+	{
+		return cor; 
+		
+	}
+	
+	public void setCor(String c)  
+	{
+		this.cor = c; 
+		
+	}
+	
+	
+	public double getPonta()    // ponta 
+	{
+		
+		return ponta; 
+	}
+	
+	
+	public void setPonta(double a)
+	{
+		this.ponta = a;
+	}
+	
+	
+	public String getModelo()      // modelo 
+	{
+		return modelo; 
+	}
+	
+	public void setModelo(String z)
+	{
+		this.modelo = z; 
+	}
+	
+	public boolean getTampada() // esta tampada ?
+	{
+		return tampada; 
+	}
+	
+	
+	public void setTampada(boolean f)
+		
+	{
+		this.tampada = f; 
+	}
+	
+	public void Status()
+	{
+			
+		System.out.println("COR: " + this.getCor());
+		System.out.printf("PONTA: %.1f %n ", this.getPonta());  // ponta
+		System.out.println("MODLEO: " + this.getModelo()); // modelo
+		System.out.println("TAMPADA ? " + this.tampada); // tamapda
+		
+		
+		
+	}
+	
+	
+	
+	
+}
