@@ -127,10 +127,10 @@ public class Corrente
 	
 
 	
-	private int numConta[]; // codigo da conta    set(I) get(I)
-	private String tipo[];    // tipo da conta                   // set(i) get(i)
-	private String dono[];    // nome do dono da conta   //  set(i) get(i)
-	private double saldo[];   // saldo do dono                  //   set(i) get(i)
+	private int[] numConta; // codigo da conta    set(I) get(I)
+	private String[] tipo;    // tipo da conta                   // set(i) get(i)
+	private String[] dono;    // nome do dono da conta   //  set(i) get(i)
+	private double[] saldo;   // saldo do dono                  //   set(i) get(i)
 	private boolean status;               
 	   
 	                                                             // fazer um metodo que retorna a lista de cliente ligada a seus nomes
@@ -138,20 +138,20 @@ public class Corrente
 	
 	public void AbrirConta(String nome, int tipo, int codigo, double saldo) // 1 = nome  2 = tipo  3 =  codigo e posicoes 4 = saldo                 tipo e um  int  q faz a operacao if e else
 	{
-		setDono(codigo, nome);           // NOME DONO DA CONTA
+		this.setDono(codigo, nome);           // NOME DONO DA CONTA
 		
 				if (tipo == 1)          // TIPO DA CONTA
 					{
-						setTipo(codigo, "CORRENTE");
+						this.setTipo(codigo, "CORRENTE");
 					}
 				else if (tipo == 2)
 					{
-						setTipo(codigo, "POUPANCA");
+						this.setTipo(codigo, "POUPANCA");
 					}
 				
 				
-		setNumConta(codigo, codigo);	 // CODIGO DA CONTA
-		setSaldo(codigo, saldo);
+		this.setNumConta(codigo, codigo);	 // CODIGO DA CONTA
+		this.setSaldo(codigo, saldo);
 		
 		/*E ESPERADO QUE COM ISSO ACONTECA A NATURAL ASSOCIACAO DO CODIGO COM A POSICAO QUE SE ENCONTRA CADA USUARIO*/
 		
@@ -213,7 +213,7 @@ public class Corrente
 	
 	public void status(int codigo)      	// STATUS:  ler e passar como parametro o codito do cliente 
 	{
-		System.out.println("NOME CLIENTE: " + this.getDono(codigo));
+		//System.out.println("NOME CLIENTE: " + this.getDono(codigo));
 		System.out.println("TIPO DA CONTA: " + this.getTipo(codigo));
 		System.out.println("CODIGO DO CLIENT: " + this.getNumConta(codigo));
 		System.out.printf("SALDO DO CLIENTE: R$ %.2f %n", this.getSaldo(codigo));
